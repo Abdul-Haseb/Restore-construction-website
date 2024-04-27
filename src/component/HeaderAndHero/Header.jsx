@@ -7,7 +7,7 @@ import {
   PintrestSvg,
   TwitterSvg,
 } from "../Icons";
-import { useState } from "preact/hooks";
+import { Link, useLocation } from "react-router-dom";
 
 const NavLinks = [
   {
@@ -16,36 +16,38 @@ const NavLinks = [
   },
   {
     page: "About Us",
-    link: "/",
+    link: "/AboutUs",
   },
   {
     page: "Services",
-    link: "/",
+    link: "/ServicesPage",
   },
   {
     page: "Project Gallery",
-    link: "/",
+    link: "/ProjectGalleryPage",
   },
   {
     page: "Our Team",
-    link: "/",
+    link: "/OurTeam",
   },
 ];
-const Header = () => {
-  // State For the current Tab
-  const [activeTab, setActiveTab] = useState(0);
 
-  const handleActivePage = (getCurrentIndex) => setActiveTab(getCurrentIndex);
+const Header = () => {
+  const location = useLocation(); // Get the current location
+
+  const isActive = (link) => {
+    return location.pathname === link; // Check if the current URL matches the link
+  };
 
   return (
     <div className="">
-      {/* TIMING AND SOCILA LINKS  */}
+      {/* TIMING AND SOCIAL LINKS */}
       <div className="pt-5 pb-4 px-4 md:px-10 lg:px-24 bg-[#F2F2F2] flex items-center justify-between">
         <p className="md:text-lg ml-10 font-inter">
           Opening Hours: 09:00AM to 05:00PM
         </p>
 
-        {/* Social Links  */}
+        {/* Social Links */}
         <div className="flex items-center gap-2 md:gap-3 lg:gap-4">
           <InstaSvg />
           <FacebookSvg />
@@ -53,9 +55,9 @@ const Header = () => {
           <PintrestSvg />
         </div>
       </div>
-      {/* Logo & Mail & Contact  */}
+      {/* Logo & Mail & Contact */}
       <div className="px-4 md:px-10 lg:px-24 py-7 flex justify-between">
-        {/* Logo  */}
+        {/* Logo */}
         <div className="w-32 md:w-48 lg:w-full">
           <img
             src="/images/Logo.png"
@@ -64,9 +66,9 @@ const Header = () => {
           />
         </div>
 
-        {/* Mail and Contact  */}
+        {/* Mail and Contact */}
         <div className="flex items-center gap-4 whitespace-nowrap">
-          {/* Mail  */}
+          {/* Mail */}
           <div className="flex items-center gap-2">
             <MailSvg />
             <div className="font-inter">
@@ -75,7 +77,7 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Contact  */}
+          {/* Contact */}
           <div className="flex items-center gap-2">
             <CallIcon />
             <div className="font-inter">
@@ -85,26 +87,23 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {/* NavLinks  */}
+      {/* NavLinks */}
       <div className="max-w-fit items-center relative font-inter z-10 bg-primary mx-auto py-3 rounded-sm px-5 text-white flex gap-5 cursor-pointer">
         {NavLinks.map(({ page, link }, index) => (
           <span
-            className={
-              activeTab === index
-                ? "border-white border-b-2 cursor-pointer"
-                : ""
-            }
             key={index}
-            onClick={() => handleActivePage(index)}
+            className={`p-1 ${
+              isActive(link) ? "border-white border-b-2 cursor-pointer" : ""
+            }`}
           >
-            {page}
+            <Link to={link}>{page}</Link>
           </span>
         ))}
 
-        {/* Book Consultaion Button  */}
+        {/* Book Consultation Button */}
         <div>
           <button className="py-2 md:py-4 lg:py-5 px-3 rounded-md md:px-5 lg:px-7 bg-black text-white font-semibold transition-all ease-in duration-300 hover:bg-white hover:text-black border-transparent border hover:border-black">
-            Book Consultaion Now
+            <Link to={"/BookConsultaion"}>Book Consultation Now</Link>
           </button>
         </div>
       </div>

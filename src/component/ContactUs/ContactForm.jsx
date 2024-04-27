@@ -6,7 +6,7 @@ const ContactForm = () => {
       className="py-36 px-4 md:px-10 lg:px-24 font-inter bg-white flex flex-col md:flex-row  gap-10 items-center justify-between 2xl:justify-center
     "
     >
-      <div className="">
+      <div className="flex-1">
         <h6 className="font-semibold text-3xl md:text-4xl font-playfair lg:text-5xl text-[#1C2752] pb-8">
           FREE CONSULTATION
         </h6>
@@ -43,7 +43,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-center flex-1">
         <p className="bg-gray-100 w-[250px] mx-auto text-[#1C2752]  font-inter px-5 py-3 font-medium text-2xl mb-3 flex items-center">
           <span>
             <WhyUsSvg />

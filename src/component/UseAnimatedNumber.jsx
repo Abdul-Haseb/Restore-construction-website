@@ -3,7 +3,7 @@ import { useState, useEffect } from "preact/hooks";
 const useAnimatedNumbers = (
   data,
   triggerAnimation = true,
-  animationDuration = 1000,
+  animationDuration = 3000,
   updateInterval = 20
 ) => {
   const [animatedNumbers, setAnimatedNumbers] = useState(
