@@ -1,0 +1,109 @@
+import React from "react";
+import {
+  CommaSvg,
+  TestimonialLeftArrow,
+  TestimonialRightArrow,
+  WhyUsSvg,
+} from "../Icons";
+
+const Span = () => (
+  <span className="font-bold text-[#1C2752] text-xl">
+    "In sed pretium metus"
+  </span>
+);
+
+const data = [
+  {
+    img: "/images/user.png",
+    name: "Nancy luther",
+    place: "New York",
+    icon: <CommaSvg />,
+  },
+  {
+    img: "/images/user.png",
+    name: "Nancy luther",
+    place: "New York",
+    icon: <CommaSvg />,
+  },
+  {
+    img: "/images/user.png",
+    name: "Nancy luther",
+    place: "New York",
+    icon: <CommaSvg />,
+  },
+
+  {
+    img: "/images/user.png",
+    name: "Nancy luther",
+    place: "New York",
+    icon: <CommaSvg />,
+  },
+  {
+    img: "/images/user.png",
+    name: "Nancy luther",
+    place: "New York",
+    icon: <CommaSvg />,
+  },
+];
+
+const Testimonials = () => {
+  return (
+    <div className="py-16 px-4 md:px-0 md:pl-10 lg:pl-24 bg-gray-100">
+      <h6 className="font-semibold text-2xl font-playfair md:text-3xl lg:text-5xl mb-3 text-[#1C2752]">
+        Happy Clients -
+      </h6>
+      <p className="font-light text-[#1C2752] text-xl md:text-2xl ">
+        What Our Clients think about us
+      </p>
+      <p className="bg-gray-100 text-[#1C2752]  w-[250px] font-inter px-5 py-3 font-medium text-2xl mb-3 flex items-center">
+        <span>
+          <WhyUsSvg />
+        </span>
+        Testimonials
+      </p>
+      <div
+        id="scrollbar"
+        className="overflow-x-scroll flex items-center font-inter gap-4 md:gap-6 lg:gap-10 flex-shrink-0"
+      >
+        {data.map((data, index) => (
+          <div
+            key={index}
+            className="bg-white min-w-80 lg:min-w-[500px] p-10 shadow-md"
+          >
+            <div className="flex justify-between items-center border-b pb-2">
+              <div className="flex items-center gap-3">
+                <div>
+                  <img src={data.img} alt="" className="w-12 md:w-16 lg:w-20" />
+                </div>
+                <div>
+                  <p className="text-[#1C2752]">{data.name}</p>
+                  <p className="text-[#7E7E7E] text-sm">{data.place}</p>
+                </div>
+              </div>
+              <div>
+                <CommaSvg />
+              </div>
+            </div>
+
+            <div className="italic text-[#7E7E7E] pt-2 pb-8">
+              Pellentesque vehicula eros neque, maximus mattis est sagittis
+              facilisi.{" "}
+              <span className="font-bold text-[#1C2752] text-xl">
+                {" "}
+                ”In sed pretium metus”{" "}
+              </span>
+              . Ppretium id urna sit amet tincidunt. Lorem ipsum dolor sit
+              amet,tristique. Duis cursus,in elementum tristique
+            </div>
+            <div className="flex gap-2 items-center ">
+              <TestimonialLeftArrow />
+              <TestimonialRightArrow />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Testimonials;
