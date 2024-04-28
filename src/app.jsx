@@ -7,6 +7,7 @@ import ServicesPage from "./Pages/ServicesPage";
 import OurTeam from "./Pages/OurTeam";
 import ProjectGalleryPage from "./Pages/ProjectGalleryPage";
 import BookConsultaion from "./Pages/BookConsultaion";
+import CommercialPage from "./Pages/CommercialPage";
 
 const App = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/OurTeam" element={<OurTeam />} />
           <Route path="/ProjectGalleryPage" element={<ProjectGalleryPage />} />
           <Route path="/BookConsultaion" element={<BookConsultaion />} />
+          <Route path="/CommercialPage" element={<CommercialPage />} />
         </Routes>
       </BrowserRouter>
     </div>

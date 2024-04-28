@@ -32,7 +32,7 @@ const Hero = () => {
           />
         ))}
       </div>
-      <div className="z-10 relative text-white px-4 md:px-10 lg:px-24 py-56 h-full">
+      <div className="z-10 relative text-white px-4 md:px-10 lg:px-24 py-16 md:py-24 lg:py-56 h-full">
         <p className="bg-gray-100 bg-opacity-20 max-w-fit p-3 flex items-center gap-2 mb-4 font-inter">
           <Icon /> Restoring the Present, Strengthening the Future...!
         </p>

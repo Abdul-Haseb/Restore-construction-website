@@ -2,12 +2,14 @@ import React from "react";
 import {
   CallIcon,
   FacebookSvg,
+  Hamburger,
   InstaSvg,
   MailSvg,
   PintrestSvg,
   TwitterSvg,
 } from "../Icons";
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "preact/hooks";
 
 const NavLinks = [
   {
@@ -33,6 +35,13 @@ const NavLinks = [
 ];
 
 const Header = () => {
+  const [MobileNaveOpen, setMobileNavOpen] = useState(false);
+
+  const handleMobileNav = () => setMobileNavOpen(!MobileNaveOpen);
+
+  // Add a class to the root element to disable scrolling and prevent interaction
+  document.documentElement.classList.toggle("no-scroll", MobileNaveOpen);
+
   const location = useLocation(); // Get the current location
 
   const isActive = (link) => {
@@ -48,7 +57,7 @@ const Header = () => {
         </p>
 
         {/* Social Links */}
-        <div className="flex items-center gap-2 md:gap-3 lg:gap-4">
+        <div className="items-center gap-2 md:gap-3 lg:gap-4 hidden md:flex">
           <InstaSvg />
           <FacebookSvg />
           <TwitterSvg />
@@ -56,18 +65,18 @@ const Header = () => {
         </div>
       </div>
       {/* Logo & Mail & Contact */}
-      <div className="px-4 md:px-10 lg:px-24 py-7 flex justify-between">
-        {/* Logo */}
-        <div className="w-32 md:w-48 lg:w-full">
-          <img
-            src="/images/Logo.png"
-            alt="logo"
-            className="w-24 md:w-32 lg:w-40 xl:w-52"
-          />
+      <div className="px-4 md:px-10 lg:px-24 py-4 md:py-7 mb-5 md:mb-0 flex md:justify-between justify-between items-center">
+        {/* Logo  and Hamburger*/}
+        <div className="md:hidden" onClick={handleMobileNav}>
+          <Hamburger />
         </div>
+        <div className="w-52 md:w-48 lg:w-52">
+          <img src="/images/Logo.png" alt="logo" className="w-full" />
+        </div>
+        <div />
 
         {/* Mail and Contact */}
-        <div className="flex items-center gap-4 whitespace-nowrap">
+        <div className="items-center gap-4 whitespace-nowrap hidden md:flex">
           {/* Mail */}
           <div className="flex items-center gap-2">
             <MailSvg />
@@ -88,12 +97,14 @@ const Header = () => {
         </div>
       </div>
       {/* NavLinks */}
-      <div className="max-w-fit items-center relative font-inter z-10 bg-primary mx-auto py-3 rounded-sm px-5 text-white flex gap-5 cursor-pointer">
+      {MobileNaveOpen && <MobileNav handleMobileNav={handleMobileNav} />}
+      <div className="max-w-fit hidden md:flex items-center relative font-inter z-40 bg-primary mx-auto py-3 rounded-sm px-5 text-white gap-5 cursor-pointer">
         {NavLinks.map(({ page, link }, index) => (
           <span
             key={index}
             className={`p-1 ${
-              isActive(link) ? "border-white border-b-2 cursor-pointer" : ""
+              isActive(link) &&
+              "border-white border-b-2 cursor-pointer text-[#F1EFF2] font-bold"
             }`}
           >
             <Link to={link}>{page}</Link>
@@ -102,9 +113,11 @@ const Header = () => {
 
         {/* Book Consultation Button */}
         <div>
-          <button className="py-2 md:py-4 lg:py-5 px-3 rounded-md md:px-5 lg:px-7 bg-black text-white font-semibold transition-all ease-in duration-300 hover:bg-white hover:text-black border-transparent border hover:border-black">
-            <Link to={"/BookConsultaion"}>Book Consultation Now</Link>
-          </button>
+          <Link to={"/BookConsultaion"}>
+            <button className="py-2 md:py-4 lg:py-5 px-3 rounded-md md:px-5 lg:px-7 bg-black text-white font-semibold transition-all ease-in duration-300 hover:bg-white hover:text-black border-transparent border hover:border-black">
+              Book Consultation Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>
@@ -112,3 +125,29 @@ const Header = () => {
 };
 
 export default Header;
+
+const MobileNav = ({ handleMobileNav }) => {
+  return (
+    <div className="fixed top-0 z-30 left-0 w-fit">
+      <div className="relative h-screen flex flex-col font-inter z-50 bg-primary mx-auto py-3 rounded-sm px-5 text-white gap-5 cursor-pointer">
+        <div className="absolute top-5 right-5" onClick={handleMobileNav}>
+          &times;
+        </div>
+        {NavLinks.map(({ page, link }, index) => (
+          <div key={index} onClick={handleMobileNav}>
+            <Link to={link}>{page}</Link>
+          </div>
+        ))}
+
+        {/* Book Consultation Button */}
+        <div onClick={handleMobileNav}>
+          <Link to={"/BookConsultaion"}>
+            <button className="py-2 md:py-4 lg:py-5 px-3 rounded-md md:px-5 lg:px-7 bg-black text-white font-semibold transition-all ease-in duration-300 hover:bg-white hover:text-black border-transparent border hover:border-black">
+              Book Consultation Now
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};

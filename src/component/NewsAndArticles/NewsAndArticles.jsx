@@ -38,7 +38,7 @@ const NewsAndArticles = () => {
   return (
     <div className="bg-[#F2F2F2] py-36">
       <div className="px-4 md:px-0 md:pl-10 lg:pl-24">
-        <h6 className="font-semibold text-2xl md:text-3xl font-playfair lg:text-4xl mb-7 text-[#1C2752] ">
+        <h6 className="font-semibold text-2xl md:text-3xl font-playfair lg:text-4xl mb-7 text-[#1C2752]">
           News & Articles
         </h6>
         <p className="text-[#7E7E7E] font-light font-inter md:text-xl pr-4 md:pr-10 lg:pr-24">

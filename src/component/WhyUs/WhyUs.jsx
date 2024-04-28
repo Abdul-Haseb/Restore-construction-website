@@ -57,8 +57,8 @@ const WhyUs = () => {
       className="mt-11 flex flex-col md:grid grid-cols-2 gap-5 md:gap-10 items-center justify-between"
       ref={ref}
     >
-      <div className="bg-[url('/images/Image.png')] box-border px-4 flex-shrink md:px-10 lg:px-24  py-28 object-contain bg-no-repeat flex items-center justify-center ">
-        <div className="bg-[#1C2752] py-48 px-16 lg:px-28 bg-opacity-70 text-white">
+      <div className="bg-[url('/images/Image.png')] box-border px-4 flex-shrink md:px-10 lg:px-24  lg:py-28 py-10 md:py-16 object-contain bg-no-repeat flex items-center justify-center ">
+        <div className="bg-[#1C2752] py-20 md:py-32 lg:py-48 px-4 md:px-16 lg:px-28 bg-opacity-70 text-white">
           {data.map(({ text }, index) => (
             <div
               className="border border-white flex gap-4 pr-16 mb-5 items-center"

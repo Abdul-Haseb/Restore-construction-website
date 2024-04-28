@@ -20,7 +20,7 @@ const Footer = () => {
         />
       </div>
       <div className="flex justify-between flex-col md:flex-row border-b py-4 items-start md:items-center">
-        <div className=" flex flex-col py-4 justify-between px-10">
+        <div className=" flex flex-col py-4 justify-between px-10 flex-1">
           <p className="lg:text-xl max-w-lg text-white">
             Denouncing pleasure and praising pain was born and I will givg you a
             coghmplete acchount of the system, and expound the actual
@@ -32,7 +32,7 @@ const Footer = () => {
             <FooterPintrest />
           </div>
         </div>
-        <div className="flex flex-col text-white lg:text-lg gap-2 py-4  w-full md:w-fit border-t mt-10 md:border-l md:border-t-0 px-10">
+        <div className="flex flex-col text-white lg:text-lg gap-2 py-4 flex-1 border-t mt-10 md:border-l md:border-t-0 px-10">
           <h6 className="font-semibold">Explore </h6>
           <span>About Us</span>
           <span>Services</span>

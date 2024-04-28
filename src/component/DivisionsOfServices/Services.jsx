@@ -20,7 +20,7 @@ const Services = () => {
           <ServicesCards />
         </div>
         <div className="w-full flex justify-end mt-10">
-          <button className="font-thin text-xl flex items-center gap-2">
+          <button className="font-thin text-xl flex items-center gap-2 font-inter">
             View All
             <span>
               <RightArrow color={"black"} />
