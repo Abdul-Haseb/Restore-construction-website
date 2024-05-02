@@ -7,23 +7,25 @@ import ServicesPage from "./Pages/ServicesPage";
 import OurTeam from "./Pages/OurTeam";
 import ProjectGalleryPage from "./Pages/ProjectGalleryPage";
 import BookConsultaion from "./Pages/BookConsultaion";
-import CommercialPage from "./Pages/CommercialPage";
+import WorkFlowPage from "./Pages/WorkFlowPage";
+import MarketCardsPage from "./Pages/MarketCardsPage";
 
 const App = () => {
   useEffect(() => {
     window.history.scrollRestoration = "manual";
   }, []);
   return (
-    <div className="max-w-[2000px] mx-auto ">
+    <div className="max-w-[2000px] mx-auto">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HeroPage />} />
-          <Route path="/AboutUs" element={<AboutUs />} />
-          <Route path="/ServicesPage" element={<ServicesPage />} />
-          <Route path="/OurTeam" element={<OurTeam />} />
-          <Route path="/ProjectGalleryPage" element={<ProjectGalleryPage />} />
-          <Route path="/BookConsultaion" element={<BookConsultaion />} />
-          <Route path="/CommercialPage" element={<CommercialPage />} />
+          {/* <Route path="/AboutUs" element={<AboutUs />} /> */}
+          {/* <Route path="/ServicesPage" element={<ServicesPage />} /> */}
+          {/* <Route path="/OurTeam" element={<OurTeam />} /> */}
+          {/* <Route path="/ProjectGalleryPage" element={<ProjectGalleryPage />} /> */}
+          {/* <Route path="/BookConsultaion" element={<BookConsultaion />} /> */}
+          <Route path="/MarketSector" element={<MarketCardsPage />} />
+          <Route path="/WorkFlowPage" element={<WorkFlowPage />} />
         </Routes>
       </BrowserRouter>
     </div>

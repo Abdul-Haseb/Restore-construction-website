@@ -71,7 +71,9 @@ const Header = () => {
           <Hamburger />
         </div>
         <div className="w-52 md:w-48 lg:w-52">
-          <img src="/images/Logo.png" alt="logo" className="w-full" />
+          <Link to={"/"}>
+            <img src="/images/Logo.png" alt="logo" className="w-full" />
+          </Link>
         </div>
         <div />
 

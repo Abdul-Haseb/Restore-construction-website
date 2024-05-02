@@ -1,36 +1,43 @@
 import React from "react";
 import { Heading, NewsSvg, ReadMoreSvg, TimeSvg } from "../Icons";
+import { Link } from "react-router-dom";
 
 const data = [
   {
     image: "/images/one.png",
     heading: "Improve Workflow With bluecollar Construction",
     desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    link: "/WorkFlowPage",
   },
   {
     image: "/images/two.png",
     heading: "The Connection between Electric & Construction Business",
     desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    link: "/",
   },
   {
     image: "/images/three.png",
     heading: "Promising Business in Construction Industry",
     desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    link: "/",
   },
   {
     image: "/images/four.png",
     heading: "Promising Business in Construction Industry",
     desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    link: "/",
   },
   {
     image: "/images/one.png",
     heading: "Improve Workflow With bluecollar Construction",
     desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    link: "/",
   },
   {
     image: "/images/one.png",
     heading: "Improve Workflow With bluecollar Construction",
     desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    link: "/",
   },
 ];
 
@@ -53,7 +60,7 @@ const NewsAndArticles = () => {
       </div>
       <div className="pl-4 md:pl-10 lg:pl-24 w-full mt-8">
         <div id="scrollbar" className="overflow-x-scroll font-inter">
-          <div className="flex gap-10 w-fit">
+          <div className="flex gap-10 w-fit ">
             {data.map((data, index) => (
               <div className="flex-none" key={index}>
                 <div className="flex flex-col w-[370px] md:w-[411px] h-[530px]  shadow-xl bg-white">
@@ -75,9 +82,11 @@ const NewsAndArticles = () => {
                     <p className="text-xs md:text-sm text-[#7E7E7E] pb-3">
                       {data.desc}
                     </p>
-                    <div className=" flex items-center gap-2 pb-5">
-                      ReadMore <ReadMoreSvg />
-                    </div>
+                    <Link to={data.link}>
+                      <div className=" flex items-center gap-2 pb-5">
+                        ReadMore <ReadMoreSvg />
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>
