@@ -65,7 +65,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="items-center gap-4 md:hidden flex mt-3">
+      <div className="items-center gap-4 md:hidden px-4 flex mt-3">
         {/* Mail */}
         <div className="flex items-center gap-2">
           <MailSvg width={40} />
