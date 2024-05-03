@@ -11,9 +11,9 @@ const AboutUs = () => {
         </h6>
       </div>
       <div className="px-4 md:px-10 lg:px-24 ">
-        <section className=" flex py-28 justify-center gap-10 items-center mb-16">
+        <section className=" flex py-28 justify-center flex-col md:flex-row gap-10 items-center mb-16">
           <div className="font-inter flex-1">
-            <p className="bg-gray-100 w-[320px] text-[#1C2752]  font-inter px-5 py-3 mb-10 font-medium text-2xl  flex gap-2 items-center">
+            <p className="bg-gray-100 w-[320px] text-[#1C2752] font-inter px-5 py-3 mb-10 font-medium text-2xl  flex gap-2 items-center">
               <span>
                 <OverViewSvg />
               </span>
@@ -155,7 +155,7 @@ const AboutUs = () => {
         <h6 className="font-semibold text-2xl md:text-3xl font-playfair lg:text-4xl mb-7 text-[#1C2752] ">
           A Legacy of Innovation & Dedication
         </h6>
-        <div className="flex items-center gap-10">
+        <div className="flex items-center flex-col md:flex-row gap-10">
           <div className="flex-1">
             <img src="/images/engineer.png" alt="Engineer" />
           </div>

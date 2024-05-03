@@ -1,8 +1,12 @@
+import { useEffect } from "preact/hooks";
 import { CommaSvg } from "../component/Icons";
 import MainLayout from "../component/Layout/MainLayout";
 import NewsCards from "../component/NewsCards";
 
 const WorkFlowPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Reset scroll position to top on component mount
+  }, []);
   return (
     <MainLayout>
       <div className="bg-[url('/images/workBanner.png')] object-cover w-full h-full md:-mt-10">

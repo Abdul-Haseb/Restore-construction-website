@@ -3,6 +3,9 @@ import { TickMarkSvg } from "../component/Icons";
 import MainLayout from "../component/Layout/MainLayout";
 
 const Commercial = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Reset scroll position to top on component mount
+  }, []);
   return (
     <MainLayout>
       <div className="md:-mt-10">

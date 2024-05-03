@@ -1,8 +1,12 @@
 import React from "react";
 import MainLayout from "../component/Layout/MainLayout";
 import ProjectGalleryCards from "../component/ProjectGalleryCards";
+import { useEffect } from "preact/hooks";
 
 const ProjectDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Reset scroll position to top on component mount
+  }, []);
   return (
     <MainLayout>
       <div className="-mt-10">
