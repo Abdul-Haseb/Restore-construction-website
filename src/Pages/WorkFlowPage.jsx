@@ -1,4 +1,3 @@
-import { useEffect } from "preact/hooks";
 import { CommaSvg } from "../component/Icons";
 import MainLayout from "../component/Layout/MainLayout";
 import NewsCards from "../component/NewsCards";
@@ -16,7 +15,7 @@ const WorkFlowPage = () => {
           </h1>
         </div>
       </div>
-      <div className="max-w-[1129px] mx-auto py-32">
+      <div className="max-w-[1129px] mx-auto py-32 px-4 md:px-10 lg:px-24 ">
         <div>
           <img src="/images/workimg.png" alt="image" />
         </div>
@@ -87,12 +86,12 @@ const WorkFlowPage = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#F4F4F4] py-24 text-[#7E7E7E] ">
+      <div className="bg-[#F4F4F4] py-24 text-[#7E7E7E] px-4 md:px-10 lg:px-24  ">
         <div className="px-4 md:px-10 lg:px-24 flex flex-col justify-center  gap-5 text-center items-center">
           <div>
             <CommaSvg />
           </div>
-          <p className="font-inter italic max-w-[712px] text-lg md:text-xl">
+          <p className="font-inter italic max-w-[712px] text-lg md:text-xl px-4 md:px-10 lg:px-24 ">
             Pellentesque vehicula eros neque, maximus mattis est sagittis
             facilisi.{" "}
             <span className="font-semibold text-[#1C2752]]">
@@ -101,7 +100,7 @@ const WorkFlowPage = () => {
             . Ppretium id urna sit amet tincidunt. Lorem ipsum dolor sit
             amet,tristique. Duis cursus,in elementum tristique
           </p>
-          <div className="flex flex-col items-center justify-center gap-1">
+          <div className="flex flex-col items-center justify-center gap-1 px-4 md:px-10 lg:px-24 ">
             <img src="/images/user.png" alt="user" />
             <p className="font-bold text-[#1C2752] md:text-lg font-mulish">
               Nancy luther
