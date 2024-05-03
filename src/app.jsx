@@ -9,6 +9,8 @@ import ProjectGalleryPage from "./Pages/ProjectGalleryPage";
 import BookConsultaion from "./Pages/BookConsultaion";
 import WorkFlowPage from "./Pages/WorkFlowPage";
 import MarketCardsPage from "./Pages/MarketCardsPage";
+import ProjectDetails from "./Pages/ProjectDetails";
+import Commercial from "./Pages/Commercial";
 
 const App = () => {
   useEffect(() => {
@@ -19,13 +21,15 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HeroPage />} />
-          {/* <Route path="/AboutUs" element={<AboutUs />} /> */}
-          {/* <Route path="/ServicesPage" element={<ServicesPage />} /> */}
-          {/* <Route path="/OurTeam" element={<OurTeam />} /> */}
-          {/* <Route path="/ProjectGalleryPage" element={<ProjectGalleryPage />} /> */}
-          {/* <Route path="/BookConsultaion" element={<BookConsultaion />} /> */}
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/ServicesPage" element={<ServicesPage />} />
+          <Route path="/OurTeam" element={<OurTeam />} />
+          <Route path="/ProjectGalleryPage" element={<ProjectGalleryPage />} />
+          <Route path="/BookConsultaion" element={<BookConsultaion />} />
           <Route path="/MarketSector" element={<MarketCardsPage />} />
           <Route path="/WorkFlowPage" element={<WorkFlowPage />} />
+          <Route path="/ProjectDetails" element={<ProjectDetails />} />
+          <Route path="/Commercial" element={<Commercial />} />
         </Routes>
       </BrowserRouter>
     </div>

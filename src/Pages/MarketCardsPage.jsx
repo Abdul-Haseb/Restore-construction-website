@@ -40,8 +40,8 @@ const MarketCardsPage = () => {
   }, []); // Run only on component mount
   return (
     <MainLayout>
-      <div className="bg-[url('/images/commercialBanner.png')] object-cover w-full h-full -mt-10">
-        <div className="flex items-start md:items-end flex-col md:flex-row pt-36 pb-12 px-4 md:px-10 lg:px-24 z-10 text-white gap-2">
+      <div className="bg-[url('/images/commercialBanner.png')] object-cover w-full h-full md:-mt-10">
+        <div className="flex items-start md:items-end flex-col md:flex-row pt-52 pb-12 px-4 md:px-10 lg:px-24 z-10 text-white gap-2">
           <h1 className=" relative  text-2xl md:text-3xl lg:text-5xl text-center font-extrabold font-inter">
             {item.innerH1}
           </h1>

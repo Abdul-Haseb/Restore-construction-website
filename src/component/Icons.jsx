@@ -64,9 +64,9 @@ export const PintrestSvg = () => (
   </svg>
 );
 
-export const MailSvg = () => (
+export const MailSvg = ({ width }) => (
   <svg
-    width="50"
+    width={width}
     height="auto"
     viewBox="0 0 69 68"
     fill="none"
@@ -90,9 +90,9 @@ export const MailSvg = () => (
   </svg>
 );
 
-export const CallIcon = () => (
+export const CallIcon = ({ width }) => (
   <svg
-    width="50"
+    width={width}
     height="auto"
     viewBox="0 0 69 68"
     fill="none"

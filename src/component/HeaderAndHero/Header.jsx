@@ -51,8 +51,8 @@ const Header = () => {
   return (
     <div className="">
       {/* TIMING AND SOCIAL LINKS */}
-      <div className="pt-5 pb-4 px-4 md:px-10 lg:px-24 bg-[#F2F2F2] flex items-center justify-between">
-        <p className="md:text-lg ml-10 font-inter">
+      <div className="pt-5 pb-4 px-4 md:px-10 lg:px-24 bg-[#F2F2F2] hidden md:flex items-center justify-between ">
+        <p className="md:text-lg ml-10 font-inter ">
           Opening Hours: 09:00AM to 05:00PM
         </p>
 
@@ -64,8 +64,29 @@ const Header = () => {
           <PintrestSvg />
         </div>
       </div>
+
+      <div className="items-center gap-4 md:hidden flex mt-3">
+        {/* Mail */}
+        <div className="flex items-center gap-2">
+          <MailSvg width={40} />
+          <div className="font-inter">
+            <p>Mail us</p>
+            <p className="text-[#7E7E7E] text-sm">Info@restore.com</p>
+          </div>
+        </div>
+
+        {/* Contact */}
+        <div className="flex items-center gap-2">
+          <CallIcon width={40} />
+          <div className="font-inter">
+            <p>Call us</p>
+            <p className="text-[#7E7E7E] text-sm">+971 096 0554</p>
+          </div>
+        </div>
+      </div>
+
       {/* Logo & Mail & Contact */}
-      <div className="px-4 md:px-10 lg:px-24 py-4 md:py-7 mb-5 md:mb-0 flex md:justify-between justify-between items-center">
+      <div className="px-4 md:px-10 lg:px-24 py-4 md:py-7 mb-5 md:mb-0 flex justify-between  items-center">
         {/* Logo  and Hamburger*/}
         <div className="md:hidden" onClick={handleMobileNav}>
           <Hamburger />
@@ -81,7 +102,7 @@ const Header = () => {
         <div className="items-center gap-4 whitespace-nowrap hidden md:flex">
           {/* Mail */}
           <div className="flex items-center gap-2">
-            <MailSvg />
+            <MailSvg width={50} />
             <div className="font-inter">
               <p>Mail us</p>
               <p className="text-[#7E7E7E]">Info@restore.com</p>
@@ -90,7 +111,7 @@ const Header = () => {
 
           {/* Contact */}
           <div className="flex items-center gap-2">
-            <CallIcon />
+            <CallIcon width={50} />
             <div className="font-inter">
               <p>Call us</p>
               <p className="text-[#7E7E7E]">+971 096 0554</p>

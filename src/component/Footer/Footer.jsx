@@ -16,7 +16,7 @@ const Footer = () => {
         <img
           src="/images/Logo.png"
           alt="logo"
-          className="w-24 md:w-32 lg:w-40 xl:w-52"
+          className="w-36 md:w-40 lg:w-46 xl:w-52"
         />
       </div>
       <div className="flex justify-between flex-col md:flex-row border-b py-4 items-start md:items-center">

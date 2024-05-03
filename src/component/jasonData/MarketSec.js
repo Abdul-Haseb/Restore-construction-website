@@ -164,3 +164,42 @@ const data = [
 ];
 
 export default data;
+
+export const newsData = [
+  {
+    image: "/images/one.png",
+    heading: "Improve Workflow With bluecollar Construction",
+    desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    link: "/WorkFlowPage",
+  },
+  {
+    image: "/images/two.png",
+    heading: "The Connection between Electric & Construction Business",
+    desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    link: "/",
+  },
+  {
+    image: "/images/three.png",
+    heading: "Promising Business in Construction Industry",
+    desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    link: "/",
+  },
+  {
+    image: "/images/four.png",
+    heading: "Promising Business in Construction Industry",
+    desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    link: "/",
+  },
+  {
+    image: "/images/one.png",
+    heading: "Improve Workflow With bluecollar Construction",
+    desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    link: "/",
+  },
+  {
+    image: "/images/one.png",
+    heading: "Improve Workflow With bluecollar Construction",
+    desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    link: "/",
+  },
+];

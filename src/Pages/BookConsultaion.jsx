@@ -6,7 +6,7 @@ import { WhyUsSvg } from "../component/Icons";
 const BookConsultaion = () => {
   return (
     <MainLayout>
-      <div className="relative -mt-10">
+      <div className="relative md:-mt-10">
         <div className="bg-[url('/images/Banner.png')] object-cover w-full h-full">
           <h6 className="px-4 md:px-10 lg:px-24 relative z-10 py-48 text-white text-2xl md:text-3xl lg:text-5xl text-center font-inter font-extrabold">
             Book Consultation Now

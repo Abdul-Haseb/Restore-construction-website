@@ -21,7 +21,7 @@ const Hero = () => {
   }, []); // Empty dependency array ensures the effect runs only once
 
   return (
-    <div className="relative -mt-10 w-full h-screen">
+    <div className="relative md:-mt-10 w-full h-[70vh] md:h-screen">
       <div className="absolute z-0 w-full h-full top-0">
         {images.map((image, index) => (
           <img

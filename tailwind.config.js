@@ -10,6 +10,7 @@ export default {
         inter: ["Inter", "sans-serif"],
         playfair: ["Playfair Display", "serif"],
         jakarta: ["Plus Jakarta Sans", "sans-serif"],
+        mulish: ["Mulish", "sans-serif"],
       },
       fontWeight: {
         medium: 500,

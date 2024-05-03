@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -91,9 +92,11 @@ const ServicesCards = () => {
             <p className="text-xs text-[#7E7E7E] pb-4">{data.desc1}</p>
             <p className="text-xs text-[#7E7E7E]">{data.desc2}</p>
             <div className="flex justify-end pt-4">
-              <button className="text-sm bg-[#E2565D] py-2 px-5 hover:bg-white hover:text-black transition-all duration-300 ease-in hover:border border-[#E2565D] rounded-sm text-white">
-                ReadMore
-              </button>
+              <Link to={"/Commercial"}>
+                <button className="text-sm bg-[#E2565D] py-2 px-5 hover:bg-white hover:text-black transition-all duration-300 ease-in hover:border border-[#E2565D] rounded-sm text-white">
+                  ReadMore
+                </button>
+              </Link>
             </div>
           </div>
         </div>
