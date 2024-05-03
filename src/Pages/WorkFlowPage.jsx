@@ -1,3 +1,4 @@
+import { useEffect } from "preact/hooks";
 import { CommaSvg } from "../component/Icons";
 import MainLayout from "../component/Layout/MainLayout";
 import NewsCards from "../component/NewsCards";
