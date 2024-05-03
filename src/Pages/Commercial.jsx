@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { TickMarkSvg } from "../component/Icons";
 import MainLayout from "../component/Layout/MainLayout";
+import { useEffect } from "preact/hooks";
 
 const Commercial = () => {
   useEffect(() => {
@@ -15,7 +16,7 @@ const Commercial = () => {
           </h1>
         </div>
         <div className="px-4 md:px-10 lg:px-14 py-9 flex items-start gap-10 h-full">
-          <div className="bg-[#DDDDDD] min-w-[375px] pt-4 px-5 h-full">
+          <div className="bg-[#DDDDDD] min-w-[375px] hidden md:block pt-4 px-5 h-full">
             <div className="bg-[url('/images/cbg.png')] w-full h-full py-24 mb-6 text-white flex items-center justify-center flex-col font-inter">
               <div className="font-semibold text-lg md:text-xl pb-6 whitespace-nowrap">
                 Providing Varity <br /> Repair Services

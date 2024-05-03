@@ -22,7 +22,7 @@ const ProjectDetails = () => {
         </div>
         <div className="max-w-[1200px] mx-auto py-12 px-4 md:px-10 lg:px-24 text-[#7E7E7E]">
           <div className="flex items-center flex-col-reverse md:flex-row justify-around gap-5 md:gap-10 lg:gap-20 overflow-hidden ">
-            <div className=" w-full md:w-[350px] bg-[#D2D2D2] px-7 py-8 flex flex-col justify-between">
+            <div className=" w-full md:w-[350px] hidden: md:flex bg-[#D2D2D2] px-7 py-8  flex-col justify-between">
               <p className="font-mulish font-bold text-lg md:text-xl text-[#1C2752] pb-4 border-b">
                 Project Information
               </p>
