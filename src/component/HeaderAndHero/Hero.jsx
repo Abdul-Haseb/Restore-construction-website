@@ -3,9 +3,9 @@ import React from "react";
 import { Icon } from "../Icons";
 
 const images = [
-  "/images/Image1.png",
-  "/images/Image2.png",
-  "/images/Image3.png",
+  "/images/Image1.webp",
+  "/images/Image2.webp",
+  "/images/Image3.webp",
 ];
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
