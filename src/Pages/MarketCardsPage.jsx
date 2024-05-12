@@ -34,7 +34,7 @@ const data = [
 const MarketCardsPage = () => {
   const location = useLocation();
   const { item } = location?.state;
-  console.log("item", item);
+  // console.log("item", item);
   useEffect(() => {
     window.scrollTo(0, 0); // Reset scroll position to top on component mount
   }, []); // Run only on component mount

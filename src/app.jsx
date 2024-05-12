@@ -10,7 +10,7 @@ import BookConsultaion from "./Pages/BookConsultaion";
 import WorkFlowPage from "./Pages/WorkFlowPage";
 import MarketCardsPage from "./Pages/MarketCardsPage";
 import ProjectDetails from "./Pages/ProjectDetails";
-import Commercial from "./Pages/Commercial";
+import ServicesDetails from "./Pages/ServicesDetails";
 
 const App = () => {
   useEffect(() => {
@@ -29,7 +29,7 @@ const App = () => {
           <Route path="/MarketSector" element={<MarketCardsPage />} />
           <Route path="/WorkFlowPage" element={<WorkFlowPage />} />
           <Route path="/ProjectDetails" element={<ProjectDetails />} />
-          <Route path="/Commercial" element={<Commercial />} />
+          <Route path="/Services" element={<ServicesDetails />} />
         </Routes>
       </BrowserRouter>
     </div>

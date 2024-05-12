@@ -1,9 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { TickMarkSvg } from "../component/Icons";
 import MainLayout from "../component/Layout/MainLayout";
 import { useEffect } from "preact/hooks";
 
-const Commercial = () => {
+const ServicesDetails = () => {
+  const location = useLocation();
+  const item = location?.state;
+  console.log(item?.innerpoints);
   useEffect(() => {
     window.scrollTo(0, 0); // Reset scroll position to top on component mount
   }, []);
@@ -11,8 +14,9 @@ const Commercial = () => {
     <MainLayout>
       <div className="md:-mt-10">
         <div className="bg-[url('/images/servicesbanner.png')] object-cover w-full h-full mb-10">
-          <h1 className="px-4 md:px-10 lg:px-24 font-extrabold relative z-10 py-48 text-white text-2xl md:text-3xl lg:text-5xl text-center font-inter">
-            STRUCTURAL STRENGTHENING
+          <h1 className="px-4 md:px-10 lg:px-14 font-extrabold relative z-10 pt-40 pb-8 text-white text-2xl md:text-3xl lg:text-5xl font-playfair">
+            {item?.innerh1} -
+            <span className="font-normal font-inter">Services</span>
           </h1>
         </div>
         <div className="px-4 md:px-10 lg:px-14 py-9 flex items-start gap-10 h-full">
@@ -35,11 +39,16 @@ const Commercial = () => {
             <h4 className="font-inter text-black text-xl md:text-2xl lg:text-3xl">
               Solutions for
             </h4>
-            <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
-              <TickMarkSvg />
-              Transport Tunnel
-            </p>
-            <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
+            {item.solutions?.map((sol, index) => (
+              <p
+                key={index}
+                className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1"
+              >
+                <TickMarkSvg />
+                {sol}
+              </p>
+            ))}
+            {/* <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
               <TickMarkSvg />
               Cable Tunnels
             </p>
@@ -82,7 +91,7 @@ const Commercial = () => {
             <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
               <TickMarkSvg />
               Liftpits
-            </p>
+            </p> */}
             <div className="py-16 mb-72">
               <div className="pb-6 hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
                 <img src="/images/servicepack.png" alt="" />
@@ -94,49 +103,25 @@ const Commercial = () => {
           </div>
           <div>
             <div>
-              <img src="/images/structural.png" alt="image" />
+              <img src={item?.innerimg} alt="image" />
               <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-[#1C2752] font-playfair pt-8 pb-3">
-                Structural Strengthening{" "}
+                {item?.innerh2}
               </h2>
               <p className="text-[#7E7E7E] md:text-lg font-inter text-justify pb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. hda akw naws Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. hda akw naws Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                {item?.innerp1}
               </p>
               <div className="bg-[#DD1F26] flex font-inter justify-end mb-8">
                 <div className="bg-[#E2565D] w-[95%] text-white py-8 px-4 md:px-20">
                   <p className="italic mb-4 md:text-xl text-center">
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmodpordunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostronco laboris nisi ut
-                    <p className="pt-3">
-                      aliquip ex ea commodo consequat. hda akw naws”
-                    </p>
+                    {item?.innerp2}
                   </p>
                 </div>
               </div>
               <p className="text-[#7E7E7E] md:text-lg font-inter text-justify pb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. hda akw naws Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                {item?.innerp3}
               </p>
-              <p className="text-[#7E7E7E] md:text-lg font-inter text-justify pb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div className="py-12 px-12 flex items-center gap-7 flex-col md:flex-row mb-4 bg-[#F4F4F4]">
+
+              <div className="py-12 px-12 flex items-center gap-7 flex-col md:flex-row mb-4 md:mb-10 lg:mb-16 bg-[#F4F4F4]">
                 <div>
                   <img src="/images/avail.png" alt="" />
                 </div>
@@ -147,44 +132,25 @@ const Commercial = () => {
                   <img src="/images/priceaffordable.png" alt="" />
                 </div>
               </div>
-              <h2 className="text-[#0D0E10] font-semibold text-xl md:text-2xl lg:text-4xl font-inter pb-4">
-                Key benefits With Our Service
-              </h2>
-              <p className="text-[#7E7E7E] md:text-lg font-inter text-justify pb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. hda akw naws Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <h3 className="text-[#0D0E10] font-semibold text-xl md:text-2xl lg:text-4xl font-inter pb-4">
+                {item?.innerh3}
+              </h3>
+              <p className="text-[#7E7E7E] md:text-lg font-inter text-justify">
+                {item?.innerp4}
               </p>
               <p className="text-[#7E7E7E] md:text-lg font-inter text-justify pb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. hda akw naws Lorem
+                {item?.innerline}
               </p>
               <div>
-                <p className="font-medium font-inter text-sm md:text-base text-[#7E7E7E] flex items-center gap-3 pb-4">
-                  <TickMarkSvg />
-                  experience investor Technician.
-                </p>
-                <p className="font-medium font-inter text-sm md:text-base text-[#7E7E7E] flex items-center gap-3 pb-4">
-                  <TickMarkSvg />
-                  Your Electrical and Security System.
-                </p>
-                <p className="font-medium font-inter text-sm md:text-base text-[#7E7E7E] flex items-center gap-3 pb-4">
-                  <TickMarkSvg />
-                  sources whereas high standards
-                </p>
-                <p className="font-medium font-inter text-sm md:text-base text-[#7E7E7E] flex items-center gap-3 pb-4">
-                  <TickMarkSvg />
-                  Credibly innovate granular internal
-                </p>
-                <p className="font-medium font-inter text-sm md:text-base text-[#7E7E7E] flex items-center gap-3 pb-4">
-                  <TickMarkSvg />
-                  services for domestic and commercial.
-                </p>
+                {item.innerpoints?.map((points, index) => (
+                  <p
+                    key={index}
+                    className="font-medium font-inter text-sm md:text-base text-[#7E7E7E] flex items-center gap-3 pb-4"
+                  >
+                    <TickMarkSvg />
+                    {points}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
@@ -194,4 +160,4 @@ const Commercial = () => {
   );
 };
 
-export default Commercial;
+export default ServicesDetails;
