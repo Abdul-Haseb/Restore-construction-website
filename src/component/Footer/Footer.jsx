@@ -44,14 +44,14 @@ const Footer = () => {
             <FooterMail />
             <p className="flex flex-col">
               <span className="font-semibold">Mail Us</span>
-              <span>Info@Example.com</span>
+              <span>Info@restoreeme.ae</span>
             </p>
           </div>
           <div className="flex items-center gap-2">
             <FooterCall />
             <p className="flex flex-col">
               <span className="font-semibold">Call Us</span>
-              <span>+01 569 869 654</span>
+              <span>+9714 344 9711</span>
             </p>
           </div>
           <div className="flex items-center gap-2">
@@ -65,8 +65,8 @@ const Footer = () => {
       </div>
       <div className="flex w-full justify-center py-4 text-white text-sm">
         <p>
-          Copyright © Restore | All Rights Reserved | Privacy Policy | Terms
-          and Conditions
+          Copyright © Restore | All Rights Reserved | Privacy Policy | Terms and
+          Conditions
         </p>
       </div>
     </div>

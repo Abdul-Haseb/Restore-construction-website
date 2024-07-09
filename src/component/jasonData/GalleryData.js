@@ -1,0 +1,155 @@
+export const GalleryData10to19 = [
+  {
+    image: "/images/substation.png",
+    heading: "10 Substation - ",
+    desc: "Below Grade Waterproofing Repairs",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/mall.png",
+    heading: "Reef Mall - ",
+    desc: "Concrete Façade Repairs",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/mediclinic.png",
+    heading: "Mediclinic Abu Dhabi - ",
+    desc: "Structural Strengthening ",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/shoreline.png",
+    heading: "Dubai Shoreline - ",
+    desc: "Crack Injections ",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/hospital.png",
+    heading: "Dubai Hospital Cooling Tower -",
+    desc: "Concrete Repair Work",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/rooftop.png",
+    heading: "MOC Roof Top - ",
+    desc: "Concrete Repair Work",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/airport.png",
+    heading: "Al Majlis Dubai Airport - ",
+    desc: "Strengthening by I Beam",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/maple.png",
+    heading: "Al Maple 2 -  ",
+    desc: "Concrete Repair Work",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/tower.png",
+    heading: "Future Tower - ",
+    desc: "Crack Repairs",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/buildings.png",
+    heading: "DPHQ Buildings - ",
+    desc: "Remedial Works",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/park.png",
+    heading: "Sharjah Safari Park - ",
+    desc: "Foundation Repair",
+    link: "/ProjectDetails",
+  },
+];
+
+export const GalleryData20to23 = [
+  {
+    image: "/images/tower2.png",
+    heading: "West 05 Deck Tower -  ",
+    desc: "Structural strengthening and Concrete Repair work",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/building2.png",
+    heading: "Themaar 1 Building   ",
+    desc: "Concrete Repair work and Epoxy Coating",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/jumeriah.png",
+    heading: "Serenia Jumeirah",
+    desc: "Leakage Rectification andConcrete Repair Work",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/wharf.png",
+    heading: "Dubai Wharf ",
+    desc: "ICCP, Leakage Rectificationand Concrete Repair Work",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/hyatthotel.png",
+    heading: "Grand Hyatt Hotel - ",
+    desc: "Beam CFRP Strengthening and Façade Repair workk",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/gibcebuilding.png",
+    heading: "GIBCA Building  ",
+    desc: "Concrete Repair work and Epoxy Coating",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/muraqqabat.png",
+    heading: "Al Muraqqabat",
+    desc: "Structural strengthening and Concrete Repair work",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/empireheights.png",
+    heading: "Empire Heights   ",
+    desc: "Concrete Repair Work andExpansion Joint Treatment",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/internationalairport.png",
+    heading: "Sharjah International Airport ",
+    desc: "CFRP strengthening and Concrete Repair work",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/cricketstadium.png",
+    heading: "Emirates7 Cricket Stadium",
+    desc: "Structural Strengthening and Soil Stabilization Work",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/coolingplant.png",
+    heading: "District Cooling Plant",
+    desc: "Structural Strengthening and Soil Stabilization Work",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/maidubai.png",
+    heading: "Mai Dubai ",
+    desc: "Soil Stabilization, Slab Lifting and Concrete Repair Work",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/burj.png",
+    heading: "Burj Al Arab - ",
+    desc: "Strengthening by I Beam",
+    link: "/ProjectDetails",
+  },
+  {
+    image: "/images/dubairport.png",
+    heading: "Dubai Airport - ",
+    desc: "Structural Strengthening by CFRP",
+    link: "/ProjectDetails",
+  },
+];
