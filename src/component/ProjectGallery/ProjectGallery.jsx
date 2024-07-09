@@ -1,3 +1,4 @@
+import { GalleryData20to23 } from "../jasonData/GalleryData";
 import ProjectGalleryCards from "../ProjectGalleryCards";
 
 const ProjectGallery = () => {
@@ -17,7 +18,7 @@ const ProjectGallery = () => {
         id="scrollbar"
         className="flex flex-nowrap  overflow-x-scroll scrollbar-hide font-inter"
       >
-        <ProjectGalleryCards />
+        <ProjectGalleryCards data={GalleryData20to23} />
       </div>
     </div>
   );

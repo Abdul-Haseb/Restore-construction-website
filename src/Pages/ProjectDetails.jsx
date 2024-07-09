@@ -2,8 +2,20 @@ import React from "react";
 import MainLayout from "../component/Layout/MainLayout";
 import ProjectGalleryCards from "../component/ProjectGalleryCards";
 import { useEffect } from "preact/hooks";
+import { useLocation, useSearchParams } from "react-router-dom";
+import {
+  GalleryData10to19,
+  GalleryData20to23,
+} from "../component/jasonData/GalleryData";
 
 const ProjectDetails = () => {
+  const location = useLocation();
+  const { selectedItem } = location.state || {};
+  const [selectedData, setSelectedData] = useSearchParams("GalleryData10to19");
+
+  if (!selectedItem) {
+    return <div>No item selected</div>;
+  }
   useEffect(() => {
     window.scrollTo(0, 0); // Reset scroll position to top on component mount
   }, []);
@@ -20,7 +32,7 @@ const ProjectDetails = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-[1200px] mx-auto py-12 px-4 md:px-10 lg:px-24 text-[#7E7E7E]">
+        <div className="max-w-[1400px] mx-auto py-12 px-4 md:px-10 lg:px-24 text-[#7E7E7E]">
           <div className="flex items-center flex-col-reverse md:flex-row justify-around gap-5 md:gap-10 lg:gap-20 overflow-hidden ">
             <div className=" w-full md:w-[350px] hidden: md:flex bg-[#D2D2D2] px-7 py-8  flex-col justify-between">
               <p className="font-mulish font-bold text-lg md:text-xl text-[#1C2752] pb-4 border-b">
@@ -127,7 +139,11 @@ const ProjectDetails = () => {
               Related Projects
             </h3>
             <div id="scrollbar" className="flex gap-5 overflow-x-auto">
-              <ProjectGalleryCards />
+              {selectedData === "GalleryData10to19" ? (
+                <ProjectGalleryCards data={GalleryData10to19} />
+              ) : (
+                <ProjectGalleryCards data={GalleryData20to23} />
+              )}
             </div>
           </div>
         </div>

@@ -1,8 +1,11 @@
 import React from "react";
 import MainLayout from "../component/Layout/MainLayout";
-import ProjectGalleryCards, {
-  ProjectGalleryCards2,
-} from "../component/ProjectGalleryCards";
+import {
+  GalleryData10to19,
+  GalleryData20to23,
+} from "../component/jasonData/GalleryData";
+import ProjectGalleryCards from "../component/ProjectGalleryCards";
+import { useLocation } from "react-router-dom";
 
 const ProjectGalleryPage = () => {
   return (
@@ -23,13 +26,13 @@ const ProjectGalleryPage = () => {
           2020-23 Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center gap-10 pb-32">
-          <ProjectGalleryCards2 />
+          <ProjectGalleryCards data={GalleryData20to23} />
         </div>
         <h2 className="font-semibold w-full text-2xl text-[#1C2752] md:text-3xl font-playfair lg:text-4xl text-left  mb-6 px-6">
           2010-19 Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center gap-10 pb-32">
-          <ProjectGalleryCards />
+          <ProjectGalleryCards data={GalleryData10to19} />
         </div>
       </div>
     </MainLayout>
