@@ -5,7 +5,7 @@ import { TickMarkSvg, WhyUsSvg } from "../Icons";
 const data = [
   {
     number: "300+",
-    text: "Project Demo",
+    text: "Project Done",
   },
   {
     number: "500+",
@@ -82,7 +82,7 @@ const WhyUs = () => {
           </span>
           Why Us??!
         </p>
-        <h2 className="font-semibold text-2xl md:text-3xl font-playfair lg:text-4xl mb-3">
+        <h2 className="font-semibold text-2xl text-[#1C2752] md:text-3xl font-playfair lg:text-4xl text mb-3">
           What Makes Us Your Ideal Choice?
         </h2>
         <p className="text-[#7E7E7E] md:text-xl font-light pb-4 font-inter">
@@ -102,7 +102,7 @@ const WhyUs = () => {
         <div className="flex gap-2 items-start pb-8">
           <TickMarkSvg />
           <div className="font-inter ">
-            <h3 className="text-lg  lg:text-2xl font-bold">
+            <h3 className="text-lg text-[#1C2752]  lg:text-2xl font-bold">
               10 Years Experience
             </h3>
             <p className="lg:text-xl text-[#7E7E7E]">
@@ -113,7 +113,7 @@ const WhyUs = () => {
         <div className="flex gap-2 items-start pb-8">
           <TickMarkSvg />
           <div className="font-inter ">
-            <h3 className="text-lg lg:text-2xl font-bold">
+            <h3 className="text-lg text-[#1C2752] lg:text-2xl font-bold">
               Excellence Certificate
             </h3>
             <p className="lg:text-xl text-[#7E7E7E]">
@@ -124,7 +124,9 @@ const WhyUs = () => {
         <div className="flex gap-2 items-start">
           <TickMarkSvg />
           <div className="font-inter ">
-            <h3 className="text-lg lg:text-2xl font-bold">Affordable Price</h3>
+            <h3 className="text-lg lg:text-2xl text-[#1C2752] font-bold">
+              Affordable Price
+            </h3>
             <p className="lg:text-xl text-[#7E7E7E]">
               We offer competitive pricing to meet your budget needs
             </p>

@@ -7,14 +7,14 @@ const ServicesDetails = () => {
   const location = useLocation();
   const item = location?.state;
   console.log(item?.innerpoints);
-  useEffect(() => {
-    window.scrollTo(0, 0); // Reset scroll position to top on component mount
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0); // Reset scroll position to top on component mount
+  // }, []);
   return (
     <MainLayout>
       <div className="md:-mt-10">
         <div className="bg-[url('/images/servicesbanner.png')] object-cover w-full h-full mb-10">
-          <h1 className="px-4 md:px-10 lg:px-14 font-extrabold relative z-10 pt-40 pb-8 text-white text-2xl md:text-3xl lg:text-5xl font-playfair">
+          <h1 className="px-4 md:px-10 lg:px-14 font-extrabold relative z-10 pt-52 pb-10 text-white text-2xl md:text-3xl lg:text-5xl font-playfair">
             {item?.innerh1} -
             <span className="font-normal font-inter">Services</span>
           </h1>
@@ -33,10 +33,10 @@ const ServicesDetails = () => {
               </Link>
               <div className="font-semibold text-lg md:text-xl whitespace-nowrap">
                 Call us directly <br />
-                +971 902 0000
+                +971 4 344 9711
               </div>
             </div>
-            <h4 className="font-inter text-black text-xl md:text-2xl lg:text-3xl">
+            <h4 className="font-inter font-semibold text-black text-xl md:text-2xl lg:text-3xl">
               Solutions for
             </h4>
             {item.solutions?.map((sol, index) => (
@@ -48,56 +48,10 @@ const ServicesDetails = () => {
                 {sol}
               </p>
             ))}
-            {/* <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
-              <TickMarkSvg />
-              Cable Tunnels
-            </p>
-            <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
-              <TickMarkSvg />
-              Car Parks
-            </p>
-            <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
-              <TickMarkSvg />
-              Swimming Pool
-            </p>
-            <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
-              <TickMarkSvg />
-              Docks and Harbors
-            </p>
-            <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
-              <TickMarkSvg />
-              Diaphragm Walls and Piles
-            </p>
-            <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
-              <TickMarkSvg />
-              Water Treatment Plants
-            </p>
-            <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
-              <TickMarkSvg />
-              Water Tanks
-            </p>
-            <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
-              <TickMarkSvg />
-              Bridges
-            </p>
-            <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
-              <TickMarkSvg />
-              Reservoirs
-            </p>
-            <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
-              <TickMarkSvg />
-              Sewers
-            </p>
-            <p className="py-3 border-b font-inter text-[#7E7E7E] flex items-center gap-1">
-              <TickMarkSvg />
-              Liftpits
-            </p> */}
+
             <div className="py-16 mb-72">
               <div className="pb-6 hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
-                <img src="/images/servicepack.png" alt="" />
-              </div>
-              <div className="hover:scale-105 transition-all ease-in duration-300 cursor-pointer">
-                <img src="/images/detail.png" alt="" />
+                <img src="/images/pdfbtn.png" alt="" />
               </div>
             </div>
           </div>
@@ -132,7 +86,7 @@ const ServicesDetails = () => {
                   <img src="/images/priceaffordable.png" alt="" />
                 </div>
               </div>
-              <h3 className="text-[#0D0E10] font-semibold text-xl md:text-2xl lg:text-4xl font-inter pb-4">
+              <h3 className="text-[#0D0E10] font-semibold text-xl md:text-2xl lg:text-4xl font-playfair pb-4">
                 {item?.innerh3}
               </h3>
               <p className="text-[#7E7E7E] md:text-lg font-inter text-justify">

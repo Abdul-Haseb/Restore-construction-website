@@ -71,7 +71,7 @@ const Header = () => {
           <MailSvg width={40} />
           <div className="font-inter">
             <p>Mail us</p>
-            <p className="text-[#7E7E7E] text-sm">Info@restore.com</p>
+            <p className="text-[#7E7E7E] text-sm">Info@restoreeme.ae</p>
           </div>
         </div>
 
@@ -80,7 +80,7 @@ const Header = () => {
           <CallIcon width={40} />
           <div className="font-inter">
             <p>Call us</p>
-            <p className="text-[#7E7E7E] text-sm">+971 096 0554</p>
+            <p className="text-[#7E7E7E] text-sm">+9714 344 9711</p>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@ const Header = () => {
             <MailSvg width={50} />
             <div className="font-inter">
               <p>Mail us</p>
-              <p className="text-[#7E7E7E]">Info@restore.com</p>
+              <p className="text-[#7E7E7E]">Info@restoreeme.ae</p>
             </div>
           </div>
 
@@ -114,7 +114,7 @@ const Header = () => {
             <CallIcon width={50} />
             <div className="font-inter">
               <p>Call us</p>
-              <p className="text-[#7E7E7E]">+971 096 0554</p>
+              <p className="text-[#7E7E7E]">+9714 344 9711</p>
             </div>
           </div>
         </div>

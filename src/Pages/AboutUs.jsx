@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <MainLayout>
       <div className="bg-[url('/images/aboutusbanner.png')] object-cover w-full h-full md:-mt-10">
-        <h6 className="px-4 md:px-10 lg:px-24 relative z-10 py-48  text-white text-2xl md:text-3xl lg:text-5xl text-center font-extrabold font-inter">
+        <h6 className="px-4 md:px-10 lg:px-24 relative z-10 pt-52 pb-10  text-white text-2xl md:text-3xl lg:text-5xl font-playfair font-extrabold">
           ABOUT US
         </h6>
       </div>

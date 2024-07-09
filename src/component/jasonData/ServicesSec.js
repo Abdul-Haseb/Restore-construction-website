@@ -15,7 +15,6 @@ export const Servicedata = [
       "“Whether it involves reinforcing foundations, upgrading structural components, or implementing seismic retrofitting, we ensure that our solutions are robust, reliable, and aligned with the highest standards of quality and safety. “",
     innerp3:
       "Our approach begins with a comprehensive assessment by our expert team, who meticulously evaluate the unique requirements of each project. Through detailed analysis and strategic planning, we identify vulnerabilities and devise tailored solutions to address them effectively. Utilizing cutting-edge technologies and best practices in the industry, we implement a range of strengthening measures that are customized to suit the specific needs of our clients.",
-    innerh3: "Key Benefits With Our Service",
     innerp4:
       "Transforming structural vulnerabilities into fortified strengths, RESTORE's structural strengthening services redefine resilience. With meticulous assessments and cutting-edge techniques, we tailor solutions to safeguard against diverse challenges. Whether addressing a single system or integrating multiple systems, we excel in crafting effective solutions for even the most intricate strengthening challenges.Here are the key benefits of partnering with RESTORE;",
     innerline: "Here are the key benefits of partnering with RESTORE;",
@@ -51,7 +50,7 @@ export const Servicedata = [
     desc2:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cill  um dolore eu fugiat nulla pariatur.ullamco laboris nisi ut aliquiia    commodo consequat.",
     innerh1: "BELOW GRADE WATERPROOFING ",
-    innerimg: "images/innerimg.png",
+    innerimg: "images/below.png",
     innerh2: "Below Grade Waterproofing ",
     innerp1:
       "At RESTORE, we understand the importance of protecting your structures from water damage. Our water proofing repair services are designed to address leaks and vulnerabilities, ensuring that your investment remains secure and dry. With our comprehensive waterproofing repair services, you can trust that your structures are in capable hands, ensuring a dry, secure environment for years to come. Using advanced techniques and equipment, our expert team meticulously examines the structure to pinpoint sources of water intrusion and assess the extent of damage.",
@@ -72,7 +71,7 @@ export const Servicedata = [
       "Cost-Effective Solution",
     ],
     solutions: [
-      "Roofs",
+      "Lift Pits",
       "Basements",
       "Foundations",
       "Exterior Walls",
@@ -80,7 +79,7 @@ export const Servicedata = [
       "Deck",
       "Waterfront Structures",
       "Parking Structures  ",
-      "Bathrooms",
+      "Utility Rooms",
       "Kitchens",
     ],
   },
@@ -92,7 +91,7 @@ export const Servicedata = [
     desc2:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cill  um dolore eu fugiat nulla pariatur.ullamco laboris nisi ut aliquiia    commodo consequat.",
     innerh1: "SOIL STABILIZATION & SLAB LIFTING ",
-    innerimg: "images/innerimg.png",
+    innerimg: "images/soil.png",
     innerh2: "Soil Stabilization & Slab Lifting ",
     innerp1:
       "At RESTORE, we understand the critical role that soil stability plays in ensuring the longevity and integrity of structures. Our soil stabilization and slab lifting services are designed to address soil-related challenges, providing a solid foundation for your projects and mitigating settlement issues. Our solutions are designed to provide long-term results, protecting your investment and minimizing the risk of costly repairs in the future.",
@@ -117,7 +116,6 @@ export const Servicedata = [
       "Residential Construction",
       "Commercial Construction",
       "Industrial Structures",
-      "Pipeline Installation",
       "Bridges & Infrastructure",
       "Parking Structures",
       "Highways",
@@ -134,7 +132,7 @@ export const Servicedata = [
     desc2:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cill  um dolore eu fugiat nulla pariatur.ullamco laboris nisi ut aliquiia    commodo consequat.",
     innerh1: "CONCRETE REPAIRS",
-    innerimg: "images/innerimg.png",
+    innerimg: "images/conc.png",
     innerh2: "Concrete Repairs",
     innerp1:
       "At RESTORE, we understand the importance of maintaining the structural integrity of concrete elements. Our concrete repair services are meticulously crafted to address a wide range of issues, including cracks, spalling, and deterioration. Using advanced techniques and premium materials, we implement tailored solutions to restore the structural integrity of the concrete elements.",
@@ -151,7 +149,7 @@ export const Servicedata = [
       "Enhanced Structural Integrity",
       "Improved Safety",
       "Further Deterioration Prevention",
-      "CAesthetic Improvement",
+      "Aesthetic Improvement",
       "Extends Lifespan",
       "Environmental Sustainability",
     ],
@@ -162,28 +160,21 @@ export const Servicedata = [
       "Historic Preservation",
       "Buildings & Infrastructure",
       "Parking Structures",
-      "Highways",
-      "Roads ",
+      "Health Facilities",
+      "Bridges ",
+      "Leisure Facilities",
     ],
   },
   {
-    image: "/images/img4.png",
-    heading: "Condition Assessment of  Concrete Structures",
+    image: "/images/concrepair.png",
+    heading: "Condition Assessment of Concrete Structures",
     desc1:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  incididunt ut labore et dolore magna aliqua. Ut enim ad minimq commodo consequat.",
     desc2:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cill  um dolore eu fugiat nulla pariatur.ullamco laboris nisi ut aliquiia    commodo consequat.",
-  },
-  {
-    image: "/images/img5.png",
-    heading: "Cathodic Protection of Concrete Structures",
-    desc1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  incididunt ut labore et dolore magna aliqua. Ut enim ad minimq commodo consequat.",
-    desc2:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cill  um dolore eu fugiat nulla pariatur.ullamco laboris nisi ut aliquiia    commodo consequat.",
-    innerh1: "CORROSION CONTROL - CATHODIC PROTECTION",
-    innerimg: "images/innerimg.png",
-    innerh2: "Corrosion Control - Cathodic Protection of Concrete Repairs ",
+    innerh1: "CONDITION ASSESMENT OF CONCRETE STRUCTURES ",
+    innerimg: "images/condition.png",
+    innerh2: "Façade Repairs ",
     innerp1:
       "At RESTORE, we understand the damaging effects that corrosion can have on structures, which is why we offer specialized corrosion control solutions. Our corrosion control services are designed to safeguard your assets from the detrimental effects of corrosion, ensuring the longevity and durability of your structures.",
     innerp2:
@@ -205,6 +196,45 @@ export const Servicedata = [
       "Oil and Gas Structures",
       "Water & Waste Water Plants",
       "Waterfront Structures",
+      "Historic Preservation",
+      "Bridge decks & Infrastructure",
+      "Parking Structures",
+      "Marine Structures",
+      "Basement",
+    ],
+  },
+  {
+    image: "/images/img5.png",
+    heading: "Corrosion Control",
+    desc1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  incididunt ut labore et dolore magna aliqua. Ut enim ad minimq commodo consequat.",
+    desc2:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cill  um dolore eu fugiat nulla pariatur.ullamco laboris nisi ut aliquiia    commodo consequat.",
+    innerh1: "CORROSION CONTROL ",
+    innerimg: "images/corrosion.png",
+    innerh2: "Corrosion Control ",
+    innerp1:
+      "At RESTORE, we understand the damaging effects that corrosion can have on structures, which is why we offer specialized corrosion control solutions. Our corrosion control services are designed to safeguard your assets from the detrimental effects of corrosion, ensuring the longevity and durability of your structures.",
+    innerp2:
+      "“Whether it's protecting steel reinforcement in concrete structures or preventing corrosion on metal surfaces, RESTORE employs advanced techniques to create a barrier against corrosive elements.“",
+    innerp3:
+      "One of the primary methods we use for corrosion control is cathodic protection, a proven technique that helps to prevent the corrosion of metal surfaces. By applying cathodic protection systems, we create a protective electrical current that prevents corrosion from occurring, extending the lifespan of your assets and reducing the need for costly repairs. RESTORE delivers reliable and effective corrosion control solutions that preserve the integrity of your assets for years to com",
+    innerh3: "Key Benefits With Our Service",
+    innerp4:
+      "Safeguard your structures against the destructive effects of corrosion with RESTORE's specialized corrosion control concrete repair solutions. Our team utilizes cutting-edge technologies and coatings to prevent and mitigate corrosion, thereby extending the lifespan of your assets. ",
+    innerline:
+      "Discover the key benefits of our corrosion control solutions below:",
+    innerpoints: [
+      "Enhanced Structural Integrity",
+      "Extended Lifespan",
+      "Improved Safety",
+      "Environmental Protection",
+    ],
+    solutions: [
+      "Oil and Gas Structures",
+      "Water & Waste Water Plants",
+      "Waterfront Structures",
+      "Historic Preservation",
       "Bridge decks & Infrastructure",
       "Parking Structures",
       "Marine Structures",
@@ -219,7 +249,7 @@ export const Servicedata = [
     desc2:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cill  um dolore eu fugiat nulla pariatur.ullamco laboris nisi ut aliquiia    commodo consequat.",
     innerh1: "CRACK REPAIRS  ",
-    innerimg: "images/innerimg.png",
+    innerimg: "images/crack.png",
     innerh2: "Crack Repairs",
     innerp1:
       "At RESTORE, we understand the damaging effects that corrosion can have on structures, which is why we offer specialized corrosion control solutions. Our corrosion control services are designed to safeguard your assets from the detrimental effects of corrosion, ensuring the longevity and durability of your structures. ",
@@ -256,24 +286,62 @@ export const Servicedata = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  incididunt ut labore et dolore magna aliqua. Ut enim ad minimq commodo consequat.",
     desc2:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cill  um dolore eu fugiat nulla pariatur.ullamco laboris nisi ut aliquiia    commodo consequat.",
-    // innerh1: "STRUCTURAL STRENGTHENING ",
-    // innerimg: "images/innerimg.png",
-    // innerh2: "Structural Strengthening ",
-    // innerp1:
-    //   "At RESTORE, we specialize in structural strengthening, employing innovative techniques and advanced materials to fortify existing structures against a myriad of challenges. From accommodating increased occupancy demands to mitigating the impacts of environmental factors and seismic activity, our solutions are designed to enhance the resilience and longevity of buildings. ",
-    // innerp2:
-    //   "“Whether it involves reinforcing foundations, upgrading structural components, or implementing seismic retrofitting, we ensure that our solutions are robust, reliable, and aligned with the highest standards of quality and safety. “",
-    // innerp3:
-    //   "Our approach begins with a comprehensive assessment by our expert team, who meticulously evaluate the unique requirements of each project. Through detailed analysis and strategic planning, we identify vulnerabilities and devise tailored solutions to address them effectively. Utilizing cutting-edge technologies and best practices in the industry, we implement a range of strengthening measures that are customized to suit the specific needs of our clients.",
-    // innerh3: "Key Benefits With Our Service",
-    // innerp4:
-    //   "Transforming structural vulnerabilities into fortified strengths, RESTORE's structural strengthening services redefine resilience. With meticulous assessments and cutting-edge techniques, we tailor solutions to safeguard against diverse challenges. Whether addressing a single system or integrating multiple systems, we excel in crafting effective solutions for even the most intricate strengthening challenges.Here are the key benefits of partnering with RESTORE;",
-    // innperp5: "Enhanced Resilience",
-    // innerp6: "Tailored Solutions",
-    // innerp7: "Cutting-Edge Techniques and Materials",
-    // innerp8: "Comprehensive Support",
-    // innerp9: "Cost-Effective Solutions",
-    // innerp10: "Minimal Disruption",
-    // innerp11: "Commitment to Quality and Safety",
+    innerh1: "FACADE ASSESMENTS & REPAIRS ",
+    innerimg: "images/faced.png",
+    innerh2: "Façade Repairs ",
+    innerp1:
+      "At RESTORE, we understand the damaging effects that corrosion can have on structures, which is why we offer specialized corrosion control solutions. Our corrosion control services are designed to safeguard your assets from the detrimental effects of corrosion, ensuring the longevity and durability of your structures.",
+    innerp2:
+      "“Whether it's protecting steel reinforcement in concrete structures or preventing corrosion on metal surfaces, RESTORE employs advanced techniques to create a barrier against corrosive elements.“",
+    innerp3:
+      "One of the primary methods we use for corrosion control is cathodic protection, a proven technique that helps to prevent the corrosion of metal surfaces. By applying cathodic protection systems, we create a protective electrical current that prevents corrosion from occurring, extending the lifespan of your assets and reducing the need for costly repairs. RESTORE delivers reliable and effective corrosion control solutions that preserve the integrity of your assets for years to com",
+    innerh3: "Key Benefits With Our Service",
+    innerp4:
+      "Safeguard your structures against the destructive effects of corrosion with RESTORE's specialized corrosion control concrete repair solutions. Our team utilizes cutting-edge technologies and coatings to prevent and mitigate corrosion, thereby extending the lifespan of your assets. ",
+    innerline:
+      "Discover the key benefits of our corrosion control solutions below:",
+    innerpoints: [
+      "Enhanced Structural Integrity",
+      "Extended Lifespan",
+      "Improved Safety",
+      "Environmental Protection",
+    ],
+    solutions: [
+      "Oil and Gas Structures",
+      "Water & Waste Water Plants",
+      "Waterfront Structures",
+      "Historic Preservation",
+      "Bridge decks & Infrastructure",
+      "Parking Structures",
+      "Marine Structures",
+      "Basement",
+    ],
+  },
+  {
+    image: "/images/img7.png",
+    heading: "Post Tensioning Repairs",
+    desc1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  incididunt ut labore et dolore magna aliqua. Ut enim ad minimq commodo consequat.",
+    desc2:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cill  um dolore eu fugiat nulla pariatur.ullamco laboris nisi ut aliquiia    commodo consequat.",
+    innerh1: "STRUCTURAL STRENGTHENING ",
+    innerimg: "images/innerimg.png",
+    innerh2: "Structural Strengthening ",
+    innerp1:
+      "At RESTORE, we specialize in structural strengthening, employing innovative techniques and advanced materials to fortify existing structures against a myriad of challenges. From accommodating increased occupancy demands to mitigating the impacts of environmental factors and seismic activity, our solutions are designed to enhance the resilience and longevity of buildings. ",
+    innerp2:
+      "“Whether it involves reinforcing foundations, upgrading structural components, or implementing seismic retrofitting, we ensure that our solutions are robust, reliable, and aligned with the highest standards of quality and safety. “",
+    innerp3:
+      "Our approach begins with a comprehensive assessment by our expert team, who meticulously evaluate the unique requirements of each project. Through detailed analysis and strategic planning, we identify vulnerabilities and devise tailored solutions to address them effectively. Utilizing cutting-edge technologies and best practices in the industry, we implement a range of strengthening measures that are customized to suit the specific needs of our clients.",
+    innerh3: "Key Benefits With Our Service",
+    innerp4:
+      "Transforming structural vulnerabilities into fortified strengths, RESTORE's structural strengthening services redefine resilience. With meticulous assessments and cutting-edge techniques, we tailor solutions to safeguard against diverse challenges. Whether addressing a single system or integrating multiple systems, we excel in crafting effective solutions for even the most intricate strengthening challenges.Here are the key benefits of partnering with RESTORE;",
+    innperp5: "Enhanced Resilience",
+    innerp6: "Tailored Solutions",
+    innerp7: "Cutting-Edge Techniques and Materials",
+    innerp8: "Comprehensive Support",
+    innerp9: "Cost-Effective Solutions",
+    innerp10: "Minimal Disruption",
+    innerp11: "Commitment to Quality and Safety",
   },
 ];

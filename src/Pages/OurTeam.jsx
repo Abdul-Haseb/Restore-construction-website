@@ -7,25 +7,25 @@ import {
 } from "../component/Icons";
 const TeamData = [
   {
-    image: "/images/team1.png",
+    image: "/images/asim.png",
     postion: "General Manager",
-    name: "Annette Black",
+    name: "Asim Jabbar",
     mail: <TeamMemberMail />,
     linkedin: <TeamMemberLinkedIn />,
     instagram: <TeamMemberInsta />,
   },
   {
-    image: "/images/team2.png",
+    image: "/images/saad.png",
     postion: "Team Lead",
-    name: "Wade Warren",
+    name: "M Saad Hassan",
     mail: <TeamMemberMail />,
     linkedin: <TeamMemberLinkedIn />,
     instagram: <TeamMemberInsta />,
   },
   {
-    image: "/images/team3.png",
+    image: "/images/yasir.png",
     postion: "President of Sales",
-    name: "Savannah Nguyen",
+    name: "Yasir Saeed",
     mail: <TeamMemberMail />,
     linkedin: <TeamMemberLinkedIn />,
     instagram: <TeamMemberInsta />,
@@ -33,43 +33,43 @@ const TeamData = [
   {
     image: "/images/team4.png",
     postion: "HR Assistant",
-    name: "Jenny Wilson",
+    name: "Ashraf",
     mail: <TeamMemberMail />,
     linkedin: <TeamMemberLinkedIn />,
     instagram: <TeamMemberInsta />,
   },
-  {
-    image: "/images/team1.png",
-    postion: "General Manager",
-    name: "Annette Black",
-    mail: <TeamMemberMail />,
-    linkedin: <TeamMemberLinkedIn />,
-    instagram: <TeamMemberInsta />,
-  },
-  {
-    image: "/images/team1.png",
-    postion: "General Manager",
-    name: "Annette Black",
-    mail: <TeamMemberMail />,
-    linkedin: <TeamMemberLinkedIn />,
-    instagram: <TeamMemberInsta />,
-  },
-  {
-    image: "/images/team1.png",
-    postion: "General Manager",
-    name: "Annette Black",
-    mail: <TeamMemberMail />,
-    linkedin: <TeamMemberLinkedIn />,
-    instagram: <TeamMemberInsta />,
-  },
-  {
-    image: "/images/team1.png",
-    postion: "General Manager",
-    name: "Annette Black",
-    mail: <TeamMemberMail />,
-    linkedin: <TeamMemberLinkedIn />,
-    instagram: <TeamMemberInsta />,
-  },
+  // {
+  //   image: "/images/team1.png",
+  //   postion: "General Manager",
+  //   name: "Bilal khalid",
+  //   mail: <TeamMemberMail />,
+  //   linkedin: <TeamMemberLinkedIn />,
+  //   instagram: <TeamMemberInsta />,
+  // },
+  // {
+  //   image: "/images/team1.png",
+  //   postion: "General Manager",
+  //   name: "Habib",
+  //   mail: <TeamMemberMail />,
+  //   linkedin: <TeamMemberLinkedIn />,
+  //   instagram: <TeamMemberInsta />,
+  // },
+  // {
+  //   image: "/images/team1.png",
+  //   postion: "General Manager",
+  //   name: "Annette Black",
+  //   mail: <TeamMemberMail />,
+  //   linkedin: <TeamMemberLinkedIn />,
+  //   instagram: <TeamMemberInsta />,
+  // },
+  // {
+  //   image: "/images/team1.png",
+  //   postion: "General Manager",
+  //   name: "Annette Black",
+  //   mail: <TeamMemberMail />,
+  //   linkedin: <TeamMemberLinkedIn />,
+  //   instagram: <TeamMemberInsta />,
+  // },
 ];
 const OurTeam = () => {
   return (
@@ -98,7 +98,7 @@ const OurTeam = () => {
                 <p className="text-[#454545] font-medium text-xl text-nowrap md:text-2xl lg:text-3xl">
                   {name}
                 </p>
-                <div className="flex items-center justify-center">
+                <div className="flex items-center gap-2 justify-center">
                   <span>{mail}</span>
                   <span>{linkedin}</span>
                   <span>{instagram}</span>

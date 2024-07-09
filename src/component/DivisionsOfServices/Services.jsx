@@ -2,10 +2,13 @@ import React from "react";
 import { RightArrow } from "../Icons";
 import ServicesCards from "../ServicesCards";
 import { Servicedata } from "../jasonData/ServicesSec";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "preact/hooks";
 
 const Services = () => {
   const data = Servicedata;
-  console.log(data);
+  const navigate = useNavigate();
+
   return (
     <div className="bg-[#F4F4F4]">
       <div className="px-4 md:px-10 lg:px-24 py-14">
@@ -23,7 +26,10 @@ const Services = () => {
           <ServicesCards data={data} />
         </div>
         <div className="w-full flex justify-end mt-10">
-          <button className="font-thin text-xl flex items-center gap-2 font-inter">
+          <button
+            onClick={() => navigate("/ServicesPage")}
+            className="font-thin text-xl flex items-center gap-2 font-inter"
+          >
             View All
             <span>
               <RightArrow color={"black"} />

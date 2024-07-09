@@ -70,7 +70,6 @@ const data = [
     innerH3: "Industrial Work We Offer ",
     innerP4:
       "In the industrial sector, RESTORE offers tailored solutions are crafted to tackle the distinct challenges encountered in industrial environments, such as heavy loads, dynamic forces, and harsh conditions. Restore specializes in deploying advanced engineering techniques to reinforce and fortify industrial structures, ensuring their longevity and performance",
-    innerH4: "Our Commitment to Quality Work",
     innerP5:
       "At RESTORE, our commitment to quality work is unwavering, especially within the industrial sector. We understand the unique demands and complexities of Industrial areas, which is why we strive to deliver excellence in every project we undertake. From structural strengthening to repair and maintenance, we approach each task with precision, expertise, and a dedication to ensuring the highest standards of quality. Our team of seasoned professionals leverages advanced techniques and innovative solutions to address the diverse needs of Industrial structures, ultimately enhancing their safety, longevity, and performance.",
     innerP6:
@@ -84,33 +83,6 @@ const data = [
     image: "/images/Power.png",
     heading: "POWER",
     des: "Power Projects by Restore",
-    link: "/MarketSector",
-    innerH1: "WATER & WASTE WATER -  ",
-    innerH1p: "Focused Market Sector ",
-    innerH2: "Water & Waste Water Facilities",
-    innerP1:
-      "In the realm of water and wastewater management, we play a pivotal role in ensuring the integrity and durability of critical infrastructure. we provide specialized services aimed at fortifying structures such as water treatment plants, reservoirs, and wastewater facilities. Through advanced engineering solutions, including the application of innovative materials and retrofitting measures, we address the unique challenges posed by corrosive environments, seismic activities, and the constant exposure to water.",
-    innerP2:
-      "“Our team of experts at RESTORE conduct comprehensive assessments to identify vulnerabilities and develop tailored strategies to enhance the resilience of water and wastewater structures..”",
-    innerP3:
-      "By implementing these solutions, RESTORE contribute to the prevention of structural degradation, improve safety standards, and extend the service life of essential components within the water and wastewater management sector. This proactive approach is essential for maintaining the reliability and functionality of crucial facilities that support water treatment and sanitation systems.",
-    innerH3: "Water Sector Work We Offer ",
-    innerP4:
-      " Our specialized services are tailored to fortify structures essential for water and wastewater management, including water treatment plants, reservoirs, and wastewater facilities. Utilizing advanced engineering solutions, we effectively address challenges posed by corrosive environments, seismic activities, and prolonged exposure to water.",
-    innerH4: "Our Commitment to Quality Work",
-    innerP5:
-      "At RESTORE, our commitment to quality work is unwavering, especially within the industrial sector. We understand the unique demands and complexities of Industrial areas, which is why we strive to deliver excellence in every project we undertake. Our team of seasoned professionals leverages advanced techniques and innovative solutions to address the diverse needs of Industrial structures, ultimately enhancing their safety, longevity, and performance.",
-    innerP6:
-      " Implementing specialized solutions to fortify water treatment plants and reservoirs against environmental stressors.",
-    innerP7:
-      "Addressing the challenges of corrosive environments and seismic activities in wastewater facilities.",
-    innerP8:
-      "Ensuring the durability and resilience of water and wastewater infrastructure through innovative engineering techniques.",
-  },
-  {
-    image: "/images/Water.png",
-    heading: "WATER & WASTE WATER",
-    des: "Hydro Projects by Restore",
     link: "/MarketSector",
     innerH1: "POWER -  ",
     innerH1p: "Focused Market Sector ",
@@ -128,18 +100,45 @@ const data = [
     innerP5:
       "At RESTORE, our dedication to delivering quality work is paramount, particularly within the power sector. Recognizing the intricate demands and challenges inherent in power infrastructure, we are committed to excellence in every project we undertake. Our team of seasoned professionals harnesses advanced techniques and innovative solutions to meet the diverse needs of power facilities, enhancing their safety, durability, and overall performance",
     innerP6:
-      "Enhancing the reliability and longevity of critical infrastructure in power generation facilities.",
+      " Enhancing the reliability and longevity of critical infrastructure in power generation facilities.",
     innerP7:
       "Implementing advanced engineering techniques to fortify power plants against dynamic challenges.",
     innerP8:
       "Tailoring strategies to optimize safety standards and performance in power sector infrastructure.",
   },
   {
+    image: "/images/Water.png",
+    heading: "WATER & WASTE WATER",
+    des: "Hydro Projects by Restore",
+    link: "/MarketSector",
+    innerH1: "WATER & WASTE WATER - ",
+    innerH1p: "Focused Market Sector ",
+    innerH2: "Water & Waste Water Facilities",
+    innerP1:
+      "In the realm of water and wastewater management, we play a pivotal role in ensuring the integrity and durability of critical infrastructure. we provide specialized services aimed at fortifying structures such as water treatment plants, reservoirs, and wastewater facilities. Through advanced engineering solutions, including the application of innovative materials and retrofitting measures, we address the unique challenges posed by corrosive environments, seismic activities, and the constant exposure to water.",
+    innerP2:
+      "“Our team of experts at RESTORE conduct comprehensive assessments to identify vulnerabilities and develop tailored strategies to enhance the resilience of water and wastewater structures..”",
+    innerP3:
+      "By implementing these solutions, RESTORE contribute to the prevention of structural degradation, improve safety standards, and extend the service life of essential components within the water and wastewater management sector. This proactive approach is essential for maintaining the reliability and functionality of crucial facilities that support water treatment and sanitation systems. ",
+    innerH3: "Water Sector Work We Offer ",
+    innerP4:
+      "Our specialized services are tailored to fortify structures essential for water and wastewater management, including water treatment plants, reservoirs, and wastewater facilities. Utilizing advanced engineering solutions, we effectively address challenges posed by corrosive environments, seismic activities, and prolonged exposure to water.",
+    innerH4: "Our Commitment to Quality Work",
+    innerP5:
+      "At RESTORE, our dedication to delivering quality work is paramount, particularly within the power sector. Recognizing the intricate demands and challenges inherent in power infrastructure, we are committed to excellence in every project we undertake. Our team of seasoned professionals harnesses advanced techniques and innovative solutions to meet the diverse needs of power facilities, enhancing their safety, durability, and overall performance.",
+    innerP6:
+      " Implementing specialized solutions to fortify water treatment plants and reservoirs against environmental stressors.",
+    innerP7:
+      "Addressing the challenges of corrosive environments and seismic activities in wastewater facilities.",
+    innerP8:
+      "Ensuring the durability and resilience of water and wastewater infrastructure through innovative engineering techniques.",
+  },
+  {
     image: "/images/Transportation.png",
     heading: "TRANSPORTATION",
     des: "Transportation Projects by Restore",
     link: "/MarketSector",
-    innerH1: "COMMERCIAL - ",
+    innerH1: "TRANSPORTATION - ",
     innerH1p: "Focused Market Sector ",
     innerH2: "Commercial Facilities",
     innerP1:
@@ -168,38 +167,34 @@ export default data;
 export const newsData = [
   {
     image: "/images/one.png",
-    heading: "Improve Workflow With bluecollar Construction",
-    desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
+    heading: "Do You know why Concrete RepairFails?",
+    desc: "Concrete repairs often fail due to weak bonding between new and existing concrete. This bond strength is crucial for ensuring the durability and structural integrity of repaired sections.",
+    news: "Saad Hassan",
+    date: "May 27, 2024",
     link: "/WorkFlowPage",
   },
   {
     image: "/images/two.png",
     heading: "The Connection between Electric & Construction Business",
     desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
-    link: "/",
+    news: "CNN News",
+    date: "April 4, 2023",
+    link: "/WorkFlowPage",
   },
   {
     image: "/images/three.png",
     heading: "Promising Business in Construction Industry",
     desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
-    link: "/",
+    news: "Gulf News",
+    date: "April 12, 2023",
+    link: "/WorkFlowPage",
   },
   {
     image: "/images/four.png",
     heading: "Promising Business in Construction Industry",
     desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
-    link: "/",
-  },
-  {
-    image: "/images/one.png",
-    heading: "Improve Workflow With bluecollar Construction",
-    desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
-    link: "/",
-  },
-  {
-    image: "/images/one.png",
-    heading: "Improve Workflow With bluecollar Construction",
-    desc: "Pek llentesque vehicula eros neque, maximus mattis etis Nulla kl facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.",
-    link: "/",
+    news: "Gulf News",
+    date: "April 12, 2023",
+    link: "/WorkFlowPage",
   },
 ];

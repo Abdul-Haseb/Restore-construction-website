@@ -7,16 +7,16 @@ const ServicesCards = ({ data }) => {
       {data?.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col xl:flex-row bg-white rounded-sm shadow-lg gap-2 p-3 items-start xl:items-center justify-center"
+          className="flex flex-col xl:flex-row bg-white rounded-sm shadow-lg gap-2 p-3 items-start xl:items-start justify-center"
         >
           <div className="min-w-[300px] w-full h-full">
             <img
               src={item.image}
               alt="image"
-              className="object-center w-full"
+              className="object-center h-[300px] w-full grayscale"
             />
           </div>
-          <div>
+          <div className="flex flex-col justify-between h-full">
             <div>
               <img src="/images/text.png" alt="" />
             </div>

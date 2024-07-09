@@ -11,14 +11,13 @@ import WorkFlowPage from "./Pages/WorkFlowPage";
 import MarketCardsPage from "./Pages/MarketCardsPage";
 import ProjectDetails from "./Pages/ProjectDetails";
 import ServicesDetails from "./Pages/ServicesDetails";
+import ScrollToTop from "./component/ScrollToTop";
 
 const App = () => {
-  useEffect(() => {
-    window.history.scrollRestoration = "manual";
-  }, []);
   return (
     <div className="max-w-[2000px] mx-auto">
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HeroPage />} />
           <Route path="/AboutUs" element={<AboutUs />} />
