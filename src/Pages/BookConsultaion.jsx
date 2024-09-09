@@ -51,8 +51,10 @@ const BookConsultaion = () => {
             />
           </div>
         </div>
-        <div className="-mt-10">
-          <ContactForm />
+        <div className="bg-red-50">
+          <div className="-mt-10 w-full bg-red-500">
+            <ContactForm />
+          </div>
         </div>
       </div>
     </MainLayout>
