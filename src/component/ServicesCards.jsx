@@ -23,8 +23,7 @@ const ServicesCards = ({ data }) => {
             <h6 className="font-semibold text-2xl pb-4 text-[#1C2752]">
               {item.heading}
             </h6>
-            <p className="text-xs text-[#7E7E7E] pb-4">{item.desc1}</p>
-            <p className="text-xs text-[#7E7E7E]">{item.desc2}</p>
+            <p className="text-[#7E7E7E] pb-4">{item.desc1}</p>
             <div className="flex justify-end pt-4">
               <Link to={"/Services"} state={item}>
                 <button className="text-sm bg-[#E2565D] py-2 px-5 hover:bg-white hover:text-black transition-all duration-300 ease-in hover:border border border-transparent hover:border-[#E2565D] rounded-sm text-white">

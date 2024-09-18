@@ -3,10 +3,10 @@ import {
   FooterCall,
   FooterFb,
   FooterInsta,
+  FooterLinkedIn,
   FooterLocation,
   FooterMail,
-  FooterPintrest,
-  FooterTwitter,
+  FooterMaill,
 } from "../Icons";
 import { useNavigate } from "react-router-dom";
 
@@ -24,14 +24,14 @@ const Footer = () => {
       <div className="flex justify-between flex-col md:flex-row border-b py-4 items-start md:items-center">
         <div className=" flex flex-col py-4 justify-between px-10 flex-1">
           <p className="lg:text-xl max-w-lg text-white">
-            Denouncing pleasure and praising pain was born and I will givg you a
-            coghmplete acchount of the system, and expound the actual
+            Delivering innovative engineering solutions and Committed to
+            quality, safety, and sustainability in every project we undertake.
           </p>
-          <div className="flex gap-4 items-center mt-5">
+          <div className="flex gap-4 items-center mt-5 cursor-pointer">
             <FooterInsta />
             <FooterFb />
-            <FooterTwitter />
-            <FooterPintrest />
+            <FooterLinkedIn />
+            <FooterMaill />
           </div>
         </div>
         <div className="flex flex-col text-white lg:text-lg gap-2 py-4 flex-1 border-t mt-10 md:border-l md:border-t-0 px-10">
@@ -74,7 +74,7 @@ const Footer = () => {
             <FooterLocation />
             <p className="flex flex-col">
               <span className="font-semibold">Location</span>
-              <span>Apricat Tower DSO</span>
+              <span>Apricot Tower DSO Dubai UAE</span>
             </p>
           </div>
         </div>

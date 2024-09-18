@@ -35,10 +35,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_cvgwqz5", // Replace with your service ID from EmailJS
-        "template_p1mmnzh", // Replace with your template ID
+        "service_5r7e25d", // Replace with your service ID from EmailJS
+        "template_e50kkhy", // Replace with your template ID
         form.current,
-        "lnC5nGegIZSX69hGw" // Replace with your public key
+        "obrfZiu-qrqils1ec" // Replace with your public key
       )
       .then(
         (response) => {
@@ -118,7 +118,7 @@ const ContactForm = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Your Name"
-              className="text-[#7E7E7E] py-4 md:py-6 px-6 rounded-md shadow-md md:px-8 w-full outline-none"
+              className="text-[#7E7E7E] py-3 md:py-4 px-6 rounded-md shadow-md md:px-8 w-full outline-none"
             />
             {errors.name && <p className="text-red-500 pt-2">{errors.name}</p>}
           </div>
@@ -129,7 +129,7 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email Address"
-              className="text-[#7E7E7E] py-4 md:py-6 rounded-md shadow-md px-6 md:px-8 w-full outline-none"
+              className="text-[#7E7E7E] py-3 md:py-4 rounded-md shadow-md px-6 md:px-8 w-full outline-none"
             />
             {errors.email && (
               <p className="text-red-500 pt-2">{errors.email}</p>
@@ -142,7 +142,7 @@ const ContactForm = () => {
               value={formData.phone}
               onChange={handleChange}
               placeholder="Phone Number"
-              className="text-[#7E7E7E] py-4 rounded-md md:py-6 shadow-md px-6 md:px-8 w-full outline-none"
+              className="text-[#7E7E7E] py-3 rounded-md md:py-4 shadow-md px-6 md:px-8 w-full outline-none"
             />
             {errors.phone && (
               <p className="text-red-500 pt-2">{errors.phone}</p>
@@ -153,7 +153,7 @@ const ContactForm = () => {
               name="description"
               value={formData.description}
               onChange={handleChange}
-              className="w-full h-40 py-4 md:py-6 rounded-md px-6 shadow-md md:px-8 resize-none outline-none"
+              className="w-full h-40 py-3 md:py-4 rounded-md px-6 shadow-md md:px-8 resize-none outline-none"
               placeholder="Service Description"
             />
             {errors.description && (

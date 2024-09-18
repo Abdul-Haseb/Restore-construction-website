@@ -65,11 +65,11 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="items-center gap-4 md:hidden px-4 flex mt-3">
+      <div className="items-center gap-4 md:hidden px-4 flex mt-3 border-b pb-2">
         {/* Mail */}
         <div className="flex items-center gap-2">
           <MailSvg width={40} />
-          <div className="font-inter">
+          <div className="font-inter text-xs md:text-base">
             <p>Mail us</p>
             <p className="text-[#7E7E7E] text-sm">Info@restoreeme.ae</p>
           </div>
@@ -80,7 +80,9 @@ const Header = () => {
           <CallIcon width={40} />
           <div className="font-inter">
             <p>Call us</p>
-            <p className="text-[#7E7E7E] text-sm">+9714 344 9711</p>
+            <p className="text-[#7E7E7E] text-xs md:text-base">
+              +9714 344 9711
+            </p>
           </div>
         </div>
       </div>

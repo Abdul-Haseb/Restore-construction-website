@@ -55,11 +55,17 @@ const Testimonials = () => {
       <p className="font-light text-[#1C2752] text-xl md:text-2xl ">
         What Our Clients think about us
       </p>
-      <p className="bg-gray-100 text-[#1C2752]  w-[250px] font-inter px-5 py-3 font-medium text-2xl mb-3 flex items-center">
+      <p
+        className="bg-gray-100 text-[#1C2752]  w-[250px] font-inter  font-medium text-xl mt-5 md:mt-10 mb-3
+       flex items-center"
+      >
         <span>
           <WhyUsSvg />
         </span>
         Testimonials
+      </p>
+      <p className="font-semibold text-2xl font-inter mb-4 md:mb-6 md:text-3xl lg:text-5xl text-[#1C2752]">
+        Customers Says
       </p>
       <div
         id="scrollbar"
