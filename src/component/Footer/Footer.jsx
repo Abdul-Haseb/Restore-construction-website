@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col text-white lg:text-lg gap-2 py-4 flex-1 border-t mt-10 md:border-l md:border-t-0 px-10">
-          <h6 className="font-semibold">Explore </h6>
+          <h6 className="font-semibold">Explore</h6>
           <span className="cursor-pointer" onClick={() => navigate("/AboutUs")}>
             About Us
           </span>
