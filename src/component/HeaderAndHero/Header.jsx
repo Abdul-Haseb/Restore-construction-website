@@ -26,7 +26,7 @@ const NavLinks = [
   },
   {
     page: "Project Gallery",
-    link: "/ProjectGalleryPage",
+    link: "/ProjectGallery",
   },
   {
     page: "Our Team",

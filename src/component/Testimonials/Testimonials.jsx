@@ -18,18 +18,23 @@ const data = [
     name: "Nancy luther",
     place: "New York",
     icon: <CommaSvg />,
+    review:
+      "Restore exceeded our expectations with their exceptional façade assessment and repair services. Their team conducted a thorough inspection of our building's exterior and identified issues we hadn't noticed. We highly recommend Restore for anyone needing reliable and professional building maintenance.",
   },
   {
     img: "/images/user.png",
     name: "Nancy luther",
     place: "New York",
     icon: <CommaSvg />,
+    review:
+      "Working with Restore has been a fantastic experience. The team was punctual, professional, and transparent throughout the process. Our property now looks as good as new, and we feel confident that the repairs will hold up for years to come.",
   },
   {
     img: "/images/user.png",
     name: "Nancy luther",
     place: "New York",
     icon: <CommaSvg />,
+    review: `The Restore team was knowledgeable, courteous, and dedicated to delivering high-quality results. We are extremely satisfied with their work and would recommend them without hesitation."Restore is our go-to choice for any future repairs and maintenance needs."`,
   },
 
   {
@@ -37,12 +42,14 @@ const data = [
     name: "Nancy luther",
     place: "New York",
     icon: <CommaSvg />,
+    review: `The Restore team was knowledgeable, courteous, and dedicated to delivering high-quality results. We are extremely satisfied with their work and would recommend them without hesitation."Restore is our go-to choice for any future repairs and maintenance needs."`,
   },
   {
     img: "/images/user.png",
     name: "Nancy luther",
     place: "New York",
     icon: <CommaSvg />,
+    review: `The Restore team was knowledgeable, courteous, and dedicated to delivering high-quality results. We are extremely satisfied with their work and would recommend them without hesitation."Restore is our go-to choice for any future repairs and maintenance needs."`,
   },
 ];
 
@@ -91,16 +98,7 @@ const Testimonials = () => {
               </div>
             </div>
 
-            <div className="italic text-[#7E7E7E] pt-2 pb-8">
-              Pellentesque vehicula eros neque, maximus mattis est sagittis
-              facilisi.{" "}
-              <span className="font-bold text-[#1C2752] text-xl">
-                {" "}
-                ”In sed pretium metus”{" "}
-              </span>
-              . Ppretium id urna sit amet tincidunt. Lorem ipsum dolor sit
-              amet,tristique. Duis cursus,in elementum tristique
-            </div>
+            <div className="italic text-[#7E7E7E] pt-2 pb-8">{data.review}</div>
             <div className="flex gap-2 items-center ">
               <TestimonialLeftArrow />
               <TestimonialRightArrow />
