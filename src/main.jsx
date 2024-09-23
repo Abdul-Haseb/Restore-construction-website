@@ -1,11 +1,11 @@
+import React from "preact/compat";
 import { render } from "preact";
 import "./index.css";
 import App from "./app";
-import { BrowserRouter } from "react-router-dom";
 
 render(
-  <>
+  <React.StrictMode>
     <App />
-  </>,
+  </React.StrictMode>,
   document.getElementById("app")
 );
